@@ -2,7 +2,6 @@
 title: "n8n (Beta)"
 description: "RAGSuite n8n integration is Beta — use with that expectation in production planning."
 sidebarTitle: "n8n (Beta)"
-icon: "git-branch"
 ---
 
 **Edition:** Community · **Status:** Beta

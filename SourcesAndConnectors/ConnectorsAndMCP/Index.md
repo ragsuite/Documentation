@@ -2,7 +2,6 @@
 title: "Connectors & MCP"
 description: "RAGSuite connectors — Gmail, open MCP server & client, marketplace; n8n is Beta."
 sidebarTitle: "Connectors & MCP"
-icon: "plug"
 ---
 
 **Edition:** Community

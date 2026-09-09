@@ -2,7 +2,6 @@
 title: "Quick Start"
 description: "Install RAGSuite Community Edition in minutes with the official CLI — or run from a git clone."
 sidebarTitle: "Quick Start"
-icon: "zap"
 ---
 
 Get a running Community Edition console on your infrastructure. **No offline license key is required.**

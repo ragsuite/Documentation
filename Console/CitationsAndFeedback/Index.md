@@ -2,7 +2,6 @@
 title: "Citations & feedback"
 description: "Every RAGSuite answer should cite its source; collect feedback to improve quality."
 sidebarTitle: "Citations & feedback"
-icon: "message-square-quote"
 ---
 
 **Edition:** Community

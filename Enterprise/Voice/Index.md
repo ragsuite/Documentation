@@ -2,7 +2,6 @@
 title: "Voice"
 description: "Enterprise voice — browser STT/TTS on chatbot and search widgets, entitlement-gated."
 sidebarTitle: "Voice"
-icon: "mic"
 ---
 
 **Edition:** Enterprise · **Accuracy:** Shipped (entitlement-gated)

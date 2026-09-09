@@ -1,8 +1,7 @@
 ---
 title: "Console"
 description: "Operate AI Search, AI Chatbot, projects, and authentication in the RAGSuite console."
-sidebarTitle: "Overview"
-icon: "monitor"
+sidebarTitle: "Console overview"
 ---
 
 <div className="rg-landing-hero">

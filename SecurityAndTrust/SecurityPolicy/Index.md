@@ -2,7 +2,6 @@
 title: "Security policy"
 description: "How to report RAGSuite security vulnerabilities — private disclosure to sales@ragsuite.de."
 sidebarTitle: "Security policy"
-icon: "shield-alert"
 ---
 
 This summary follows the Community Edition [SECURITY.md](https://github.com/ragsuite/RAGSuite/blob/main/SECURITY.md).

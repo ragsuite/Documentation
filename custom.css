@@ -11,6 +11,51 @@
   --rg-touch: 44px;
 }
 
+/* ---- Dark readability (surfaces only; keep brand tokens) ---- */
+
+.dark {
+  --rg-dark-bg: #121a17;
+  --rg-dark-bg-elevated: #18211d;
+  --rg-dark-fg: #e8f0ec;
+  --rg-dark-fg-muted: #c5d4cc;
+}
+
+.dark body,
+.dark html {
+  background-color: var(--rg-dark-bg) !important;
+  color: var(--rg-dark-fg);
+}
+
+.dark main,
+.dark article,
+.dark [data-page-content],
+.dark .prose {
+  color: var(--rg-dark-fg);
+}
+
+/* Lift Mintlify chrome off pure black without changing layout */
+.dark #content-area,
+.dark main {
+  background-color: transparent;
+}
+
+.dark article p,
+.dark article li,
+.dark article td,
+.dark .prose p,
+.dark .prose li {
+  color: var(--rg-dark-fg-muted);
+}
+
+.dark article h1,
+.dark article h2,
+.dark article h3,
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3 {
+  color: #f2f7f4;
+}
+
 /* ---- Hero / landing ---- */
 
 .rg-landing-hero {
@@ -29,7 +74,7 @@
 }
 
 .dark .rg-landing-eyebrow {
-  color: #7dcea0;
+  color: #8fd4ae;
   opacity: 1;
 }
 
@@ -49,7 +94,8 @@
 }
 
 .dark .rg-landing-subtitle {
-  opacity: 0.78;
+  opacity: 0.92;
+  color: var(--rg-dark-fg-muted);
 }
 
 .rg-landing-section {
@@ -76,15 +122,21 @@
 }
 
 .dark .rg-cta-panel {
-  border-color: color-mix(in srgb, #7dcea0 28%, transparent);
-  background: color-mix(in srgb, var(--rg-brand-deep) 65%, #0a0a0a);
+  border-color: color-mix(in srgb, #8fd4ae 36%, transparent);
+  background: color-mix(in srgb, var(--rg-dark-bg-elevated) 88%, #1a6b4f);
   box-shadow: none;
+  color: var(--rg-dark-fg);
 }
 
 .rg-cta-panel p {
   margin: 0;
   line-height: 1.55;
   opacity: 0.92;
+}
+
+.dark .rg-cta-panel p {
+  opacity: 0.95;
+  color: var(--rg-dark-fg-muted);
 }
 
 .rg-cta-actions {
@@ -136,12 +188,12 @@
 }
 
 .dark .rg-cta-secondary {
-  border-color: color-mix(in srgb, #7dcea0 40%, transparent);
-  color: #c8ebd8 !important;
+  border-color: color-mix(in srgb, #8fd4ae 45%, transparent);
+  color: #d5efe2 !important;
 }
 
 .dark .rg-cta-secondary:hover {
-  background: color-mix(in srgb, #7dcea0 12%, transparent);
+  background: color-mix(in srgb, #8fd4ae 16%, transparent);
 }
 
 /* ---- Content readability ---- */
@@ -150,6 +202,11 @@
   font-size: 0.9rem;
   opacity: 0.75;
   margin: 0 0 1.25rem;
+}
+
+.dark .rg-meta-line {
+  opacity: 0.9;
+  color: var(--rg-dark-fg-muted);
 }
 
 /* Tables: prevent layout blowouts */
@@ -165,7 +222,8 @@ article table {
 
 .dark article table th,
 .dark article table td {
-  border-color: color-mix(in srgb, #ffffff 12%, transparent);
+  border-color: color-mix(in srgb, #ffffff 18%, transparent);
+  color: var(--rg-dark-fg-muted);
 }
 
 /* Code: keep readable, no page overflow */
@@ -187,13 +245,345 @@ article code {
 }
 
 .dark .rg-cta-actions a:focus-visible {
-  outline-color: #7dcea0;
+  outline-color: #8fd4ae;
 }
 
 /* Soften stacked custom H1 under Mintlify chrome */
 .rg-landing-hero + h1,
 .rg-landing-hero h1.rg-landing-title {
   scroll-margin-top: 5rem;
+}
+
+/* ---- Claude-style left sidebar (open tree, contrast) ---- */
+
+/* Hide Mintlify Base UI custom scrollbar chrome (double-bar / white remnant) */
+nav[aria-label="Pages"] [data-component-part="scroll-area"] > div:not([data-component-part="scroll-area-viewport"]),
+aside [data-component-part="scroll-area"] > div:not([data-component-part="scroll-area-viewport"]),
+#sidebar-content [data-component-part="scroll-area"] > div:not([data-component-part="scroll-area-viewport"]),
+#sidebar-content [data-radix-scroll-area-scrollbar],
+nav[aria-label="Pages"] [data-radix-scroll-area-scrollbar],
+aside [data-radix-scroll-area-scrollbar] {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  background: transparent !important;
+}
+
+/* Neutral native sidebar scrollbar (never brand green).
+   Mintlify sets .base-ui-disable-scrollbar { scrollbar-width: none; display:none on webkit } — override it. */
+nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"],
+nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar,
+aside [data-component-part="scroll-area-viewport"],
+aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar,
+#sidebar-content [data-component-part="scroll-area-viewport"],
+#sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar {
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: #c5cad1 transparent !important;
+  -ms-overflow-style: scrollbar !important;
+}
+
+nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"]::-webkit-scrollbar,
+nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar,
+aside [data-component-part="scroll-area-viewport"]::-webkit-scrollbar,
+aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar,
+#sidebar-content [data-component-part="scroll-area-viewport"]::-webkit-scrollbar,
+#sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar {
+  display: block !important;
+  width: 6px !important;
+  height: 6px !important;
+  background: transparent !important;
+  visibility: visible !important;
+}
+
+nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-track,
+nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-track,
+aside [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-track,
+aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-track,
+#sidebar-content [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-track,
+#sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
+nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb,
+aside [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
+aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb,
+#sidebar-content [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
+#sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #c5cad1 !important;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  visibility: visible !important;
+}
+
+.dark nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"],
+.dark nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar,
+.dark aside [data-component-part="scroll-area-viewport"],
+.dark aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar,
+.dark #sidebar-content [data-component-part="scroll-area-viewport"],
+.dark #sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar {
+  scrollbar-color: #5a6570 transparent !important;
+}
+
+.dark nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
+.dark nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb,
+.dark aside [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
+.dark aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb,
+.dark #sidebar-content [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
+.dark #sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #5a6570 !important;
+}
+
+nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-corner,
+nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-corner,
+aside [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-corner,
+aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-corner,
+#sidebar-content [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-corner,
+#sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-corner {
+  background: transparent !important;
+}
+
+/* Force nested groups open; hide accordion chevrons.
+   Only expand collapsed group lists — do not break the scroll viewport. */
+nav[aria-label="Pages"] li > button[aria-expanded="false"] + ul,
+nav[aria-label="Pages"] li > button[aria-expanded="false"] ~ ul {
+  display: block !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+nav[aria-label="Pages"] button svg:last-child,
+nav[aria-label="Pages"] [aria-expanded] > svg:last-child,
+#sidebar-content button svg:last-child {
+  display: none !important;
+}
+
+/* Section headers (group labels) — Claude weight */
+nav[aria-label="Pages"] h3,
+nav[aria-label="Pages"] button[aria-expanded],
+#sidebar-content h3 {
+  font-weight: 650 !important;
+  letter-spacing: -0.01em;
+  margin-top: 1.15rem !important;
+  margin-bottom: 0.35rem !important;
+  min-height: auto !important;
+  padding-top: 0.15rem !important;
+  padding-bottom: 0.15rem !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+nav[aria-label="Pages"] > ul > li:first-child h3,
+nav[aria-label="Pages"] > ul > li:first-child button[aria-expanded],
+#sidebar-content > ul > li:first-child h3 {
+  margin-top: 0.25rem !important;
+}
+
+.dark nav[aria-label="Pages"] h3,
+.dark nav[aria-label="Pages"] button[aria-expanded],
+.dark #sidebar-content h3 {
+  color: #f4f7f5 !important;
+  opacity: 1 !important;
+}
+
+nav[aria-label="Pages"] h3,
+nav[aria-label="Pages"] button[aria-expanded] {
+  color: #0a1f18 !important;
+}
+
+/* Page links — readable muted grey, indented under headers */
+nav[aria-label="Pages"] {
+  gap: 0 !important;
+}
+
+nav[aria-label="Pages"] a,
+#sidebar-content a {
+  display: flex !important;
+  align-items: center !important;
+  column-gap: 0.5rem !important;
+  min-height: 2rem !important;
+  padding: 0.35rem 0.65rem !important;
+  margin: 0.05rem 0 !important;
+  line-height: 1.35;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  font-size: 0.925rem !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+}
+
+nav[aria-label="Pages"] ul ul a,
+#sidebar-content ul ul a {
+  padding-left: 0.85rem !important;
+}
+
+nav[aria-label="Pages"] ul ul ul a,
+#sidebar-content ul ul ul a {
+  padding-left: 1.15rem !important;
+}
+
+.dark nav[aria-label="Pages"] a,
+.dark #sidebar-content a {
+  color: #c8d5ce !important;
+  opacity: 1 !important;
+}
+
+nav[aria-label="Pages"] a,
+#sidebar-content a {
+  color: #2a3d35 !important;
+}
+
+.dark nav[aria-label="Pages"] a:hover,
+.dark #sidebar-content a:hover {
+  color: #f2f7f4 !important;
+  background: color-mix(in srgb, #ffffff 7%, transparent);
+}
+
+nav[aria-label="Pages"] a:hover,
+#sidebar-content a:hover {
+  color: #0b3d2e !important;
+  background: color-mix(in srgb, #0b3d2e 6%, transparent);
+}
+
+/* Active pill — same weight as other links (no bold on select) */
+.dark nav[aria-label="Pages"] a[aria-current="page"],
+.dark nav[aria-label="Pages"] a[data-active="true"],
+.dark #sidebar-content a[aria-current="page"],
+.dark #sidebar-content a[data-active="true"] {
+  color: #ffffff !important;
+  background: color-mix(in srgb, #ffffff 12%, transparent) !important;
+  font-weight: 400 !important;
+}
+
+nav[aria-label="Pages"] a[aria-current="page"],
+nav[aria-label="Pages"] a[data-active="true"],
+#sidebar-content a[aria-current="page"],
+#sidebar-content a[data-active="true"],
+nav[aria-label="Pages"] a.font-semibold,
+nav[aria-label="Pages"] a.font-medium,
+nav[aria-label="Pages"] a.font-bold,
+#sidebar-content a.font-semibold,
+#sidebar-content a.font-medium {
+  font-weight: 400 !important;
+}
+
+nav[aria-label="Pages"] a[aria-current="page"],
+nav[aria-label="Pages"] a[data-active="true"],
+#sidebar-content a[aria-current="page"],
+#sidebar-content a[data-active="true"] {
+  color: #0b3d2e !important;
+  background: color-mix(in srgb, #0b3d2e 10%, transparent) !important;
+}
+
+nav[aria-label="Pages"] li,
+nav[aria-label="Pages"] ul,
+#sidebar-content li,
+#sidebar-content ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+nav[aria-label="Pages"] ul,
+#sidebar-content ul {
+  gap: 0 !important;
+  row-gap: 0 !important;
+}
+
+/* Brand mark + crisp HTML "RAGSuite Docs" label (do NOT style all header SVGs) */
+header a[href="/"],
+footer a[href="/"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.7rem !important;
+  text-decoration: none !important;
+}
+
+header a[href="/"] img.nav-logo,
+footer a[href="/"] img.nav-logo,
+header a[href="/"] img,
+footer a[href="/"] img {
+  height: 2.6rem !important;
+  width: auto !important;
+  max-width: 3rem !important;
+  flex-shrink: 0;
+  object-fit: contain !important;
+}
+
+header a[href="/"]::after,
+footer a[href="/"]::after {
+  content: "RAGSuite Docs";
+  font-size: 1.125rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.dark header a[href="/"]::after,
+.dark footer a[href="/"]::after {
+  color: #f4f7f5;
+}
+
+header a[href="/"]::after,
+footer a[href="/"]::after {
+  color: #0b3d2e;
+}
+
+/* Keep Lucide navbar icons square — never stretch with logo rules */
+header nav a svg,
+header a[href^="http"] svg {
+  height: 1rem !important;
+  width: 1rem !important;
+  max-width: 1rem !important;
+  flex-shrink: 0;
+}
+
+/* Dark mode: mute Mintlify floating ask-bar grip (bright white circle at bottom-left) */
+.dark div.fixed[class*="z-999"] [class*="FFFFFF33"],
+.dark div.fixed[class*="z-999"] [class*="FFFFFF3"] {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Stronger link contrast */
+.dark nav[aria-label="Pages"] a,
+.dark #sidebar-content a {
+  color: #d5e0da !important;
+}
+
+.dark nav[aria-label="Pages"] h3,
+.dark #sidebar-content h3 {
+  color: #ffffff !important;
+  font-size: 0.95rem !important;
+}
+
+/* Hide sidebar link icons for Claude-like text navigation */
+nav[aria-label="Pages"] a svg,
+#sidebar-content a svg {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+nav[aria-label="Pages"] button[aria-expanded] {
+  font-size: 0.82rem !important;
+  margin-top: 0.65rem !important;
+}
+
+.dark nav[aria-label="Pages"] button[aria-expanded] {
+  color: #e8f0ec !important;
 }
 
 /* ---- Responsive ---- */

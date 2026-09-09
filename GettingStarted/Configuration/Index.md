@@ -2,7 +2,6 @@
 title: "Configuration"
 description: "Configure RAGSuite secrets, SMTP, and URLs in .env for CLI or clone installs."
 sidebarTitle: "Configuration"
-icon: "settings"
 ---
 
 Set secrets once, then restart the stack. **Never commit `.env`.**

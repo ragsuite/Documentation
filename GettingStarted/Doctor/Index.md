@@ -2,7 +2,6 @@
 title: "Doctor"
 description: "Verify RAGSuite prerequisites with ragsuite doctor before you start the stack."
 sidebarTitle: "Doctor"
-icon: "stethoscope"
 ---
 
 `ragsuite doctor` checks that your machine meets the requirements for the install mode you chose (`native` or `docker`).

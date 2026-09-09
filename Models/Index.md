@@ -1,20 +1,19 @@
 ---
 title: "Models"
-description: "RAGSuite is model-agnostic — frontier APIs, EU providers, or local Ollama on your servers."
-sidebarTitle: "Overview"
-icon: "brain"
+description: "RAGSuite providers — OpenAI, Anthropic, Mistral, Google Gemini, or Custom LLM / Ollama with your keys."
+sidebarTitle: "Models overview"
 ---
 
 <div className="rg-landing-hero">
   <p className="rg-landing-eyebrow">Bring your own model</p>
   <p className="rg-landing-subtitle">
-    Point RAGSuite at frontier APIs, EU-sovereign providers, or fully local models
-    via Ollama. Switch per project. Your data stays on your infrastructure.
+    Point RAGSuite at OpenAI, Anthropic, Mistral, Google Gemini, or fully local
+    Custom LLM / Ollama. Switch per project. Your data stays on your infrastructure.
   </p>
 </div>
 
 <div className="rg-cta-panel">
-  <p>Choose frontier APIs, EU providers, or fully local Ollama — your keys, your perimeter.</p>
+  <p>Use curated chat and embedding catalogs — your keys, your perimeter. Local Ollama when you need air-gapped inference.</p>
   <div className="rg-cta-actions">
     <a className="rg-cta-primary" href="/Models/Providers/Index">Providers</a>
     <a className="rg-cta-secondary" href="/Models/OllamaAndAirGapped/Index">Ollama</a>

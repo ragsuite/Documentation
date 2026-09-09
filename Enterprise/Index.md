@@ -1,8 +1,7 @@
 ---
 title: "Enterprise"
 description: "RAGSuite Enterprise — SSO, RBAC, Compare Models, audit, analytics, voice, mobile Beta."
-sidebarTitle: "Overview"
-icon: "building-2"
+sidebarTitle: "Enterprise overview"
 ---
 
 <div className="rg-landing-hero">

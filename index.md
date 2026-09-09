@@ -2,7 +2,6 @@
 title: "RAGSuite documentation"
 description: "Official documentation for RAGSuite — self-hosted, citation-backed AI Search and AI Chatbot on your infrastructure."
 sidebarTitle: "Home"
-icon: "house"
 keywords:
   - "RAGSuite"
   - "self-hosted RAG"
@@ -48,7 +47,7 @@ ragsuite start
     Crawl, upload, Gmail, MCP, and n8n (Beta). Embed where your team works.
   </Card>
   <Card title="Models" icon="brain" href="/Models/Index">
-    Frontier APIs, EU providers, or fully local inference with Ollama.
+    OpenAI, Anthropic, Mistral, Gemini, or local Custom LLM / Ollama.
   </Card>
 </CardGroup>
 

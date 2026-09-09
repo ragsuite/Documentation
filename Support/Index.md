@@ -1,8 +1,7 @@
 ---
 title: "Support"
 description: "RAGSuite support contacts — sales@ragsuite.de and German service partners."
-sidebarTitle: "Overview"
-icon: "life-buoy"
+sidebarTitle: "Support overview"
 ---
 
 <div className="rg-landing-hero">

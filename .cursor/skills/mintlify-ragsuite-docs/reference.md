@@ -13,6 +13,7 @@
 | License / ownership | `/Users/arun/RAGSUITE/NOTICE`, `LICENSE` |
 | Security contact | `/Users/arun/RAGSUITE/SECURITY.md` → sales@ragsuite.de |
 | Env template | `/Users/arun/RAGSUITE/.env.example` |
+| LLM curated catalogs | `/Users/arun/RAGSUITE/backend/app/utils/llm_model_catalogs.py` |
 | GitHub | https://github.com/ragsuite/RAGSuite |
 | npm CLI | https://www.npmjs.com/package/@ragsuite/ragsuite |
 | Pricing | https://www.ragsuite.de/pricing/#comparison |
@@ -45,7 +46,10 @@ Use `Steps`, `Tabs`, `Tip`/`Warning`, `CardGroup`, and `.rg-landing-*` / `.rg-ct
 
 Full pipeline: crawl, upload, chat (AI Chatbot), search (AI Search), widgets.
 Connectors & MCP (Gmail, MCP, Marketplace); **n8n = Beta**.
-All LLM providers including local Ollama; citations; feedback; password auth; 2FA & sessions;
+Curated LLM providers only: **OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**,
+**Custom LLM / Ollama** (with curated chat/embedding IDs — see Models/Providers).
+Do not invent Azure OpenAI, Aleph Alpha, IONOS, OVHcloud, vLLM, or other vendors.
+Citations; feedback; password auth; 2FA & sessions;
 system health; audit basic (30 days); notifications; unlimited users/projects.
 REST API, API keys, webhooks plumbing; Docker / native deploy.
 
@@ -63,6 +67,8 @@ REST API, API keys, webhooks plumbing; Docker / native deploy.
 
 ## Do not invent
 
+- Extra LLM cloud vendors beyond the five curated providers (no Azure OpenAI, Aleph Alpha, IONOS, OVHcloud, vLLM as shipped configs)
+- Model IDs not in the curated catalogs / user-approved lists (except documenting live discovery and named runtime embedding extras)
 - SCIM, SIEM streaming, usage meters as product-ready
 - Public self-serve license portal
 - Admin UI as “React SPA” without Expo

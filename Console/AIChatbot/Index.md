@@ -2,7 +2,6 @@
 title: "AI Chatbot"
 description: "Streaming, citation-backed AI Chatbot grounded in your RAGSuite content."
 sidebarTitle: "AI Chatbot"
-icon: "message-circle"
 ---
 
 **Edition:** Community

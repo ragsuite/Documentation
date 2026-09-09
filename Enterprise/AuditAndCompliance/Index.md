@@ -2,7 +2,6 @@
 title: "Audit & compliance"
 description: "Community basic audit (30 days) vs Enterprise full audit logs and compliance exports."
 sidebarTitle: "Audit & compliance"
-icon: "clipboard-list"
 ---
 
 ## Community

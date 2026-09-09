@@ -2,7 +2,6 @@
 title: "Query tracing"
 description: "Enterprise deep query tracing — timings, confidence, and traceable answers on your infrastructure."
 sidebarTitle: "Query tracing"
-icon: "route"
 ---
 
 **Edition:** Enterprise

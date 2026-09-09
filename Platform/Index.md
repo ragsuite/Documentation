@@ -1,8 +1,7 @@
 ---
 title: "Platform"
 description: "RAGSuite platform spine — architecture, REST API, API keys and webhooks."
-sidebarTitle: "Overview"
-icon: "layers"
+sidebarTitle: "Platform overview"
 ---
 
 <div className="rg-landing-hero">

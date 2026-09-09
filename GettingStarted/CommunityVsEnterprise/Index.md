@@ -2,7 +2,6 @@
 title: "Community vs Enterprise"
 description: "What ships in RAGSuite Community Edition versus Enterprise."
 sidebarTitle: "CE vs EE"
-icon: "scale"
 ---
 
 RAGSuite is **open core**. Community Edition is a complete product. Enterprise adds organizational governance and quality/compliance tooling.
@@ -13,7 +12,7 @@ Commercial comparison: [ragsuite.de/pricing](https://www.ragsuite.de/pricing/#co
 
 - Full pipeline: crawl, upload, chat (**AI Chatbot**), search (**AI Search**), widgets  
 - Connectors & MCP (Gmail, MCP, Marketplace); **n8n is Beta**  
-- All LLM providers, including local **Ollama**  
+- Curated LLM providers (**OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**, **Custom LLM / Ollama**)  
 - REST API, API keys, webhooks  
 - Citations, feedback, password auth, 2FA & sessions  
 - System health, notifications, basic audit (30 days)  

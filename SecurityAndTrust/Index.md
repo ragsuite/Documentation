@@ -1,8 +1,7 @@
 ---
 title: "Security & Trust"
 description: "RAGSuite sovereignty, security policy, and licensing — inspectable, self-hosted AI."
-sidebarTitle: "Overview"
-icon: "shield"
+sidebarTitle: "Security overview"
 ---
 
 <div className="rg-landing-hero">

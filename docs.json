@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "RAGSuite Docs",
   "theme": "mint",
-  "description": "Official documentation for RAGSuite — the sovereign, self-hosted enterprise AI platform by NITSAN.",
+  "description": "Official documentation for RAGSuite \u2014 the sovereign, self-hosted enterprise AI platform by NITSAN.",
   "colors": {
     "primary": "#0B3D2E",
     "light": "#2D8F6F",
@@ -10,21 +10,23 @@
   },
   "favicon": "/_static/favicon.svg",
   "logo": {
-    "light": "/_static/ragsuite-logo-light.svg",
-    "dark": "/_static/ragsuite-logo-dark.svg",
+    "light": "/_static/ragsuite-mark-light.svg",
+    "dark": "/_static/ragsuite-mark-dark.svg",
     "href": "/"
   },
   "appearance": {
-    "default": "system"
+    "default": "dark"
   },
   "icons": {
     "library": "lucide"
   },
   "styling": {
-    "eyebrows": "breadcrumbs",
+    "eyebrows": "section",
     "codeblocks": "dark"
   },
-  "css": ["/custom.css"],
+  "css": [
+    "/custom.css"
+  ],
   "navbar": {
     "links": [
       {
@@ -39,8 +41,7 @@
       },
       {
         "label": "npm CLI",
-        "href": "https://www.npmjs.com/package/@ragsuite/ragsuite",
-        "icon": "package"
+        "href": "https://www.npmjs.com/package/@ragsuite/ragsuite"
       }
     ],
     "primary": {
@@ -52,21 +53,20 @@
   "navigation": {
     "groups": [
       {
-        "group": "Home",
-        "icon": "house",
-        "pages": ["index"]
+        "group": "Overview",
+        "pages": [
+          "index"
+        ]
       },
       {
         "group": "Getting Started",
-        "icon": "rocket",
-        "root": "GettingStarted/Index",
         "pages": [
+          "GettingStarted/Index",
           "GettingStarted/WhatIsRAGSuite/Index",
           "GettingStarted/CommunityVsEnterprise/Index",
           "GettingStarted/QuickStart/Index",
           {
             "group": "Install",
-            "icon": "download",
             "expanded": true,
             "pages": [
               "GettingStarted/InstallCLI/Index",
@@ -80,9 +80,8 @@
       },
       {
         "group": "Console",
-        "icon": "monitor",
-        "root": "Console/Index",
         "pages": [
+          "Console/Index",
           "Console/AISearch/Index",
           "Console/AIChatbot/Index",
           "Console/CitationsAndFeedback/Index",
@@ -92,9 +91,8 @@
       },
       {
         "group": "Sources & Connectors",
-        "icon": "plug",
-        "root": "SourcesAndConnectors/Index",
         "pages": [
+          "SourcesAndConnectors/Index",
           "SourcesAndConnectors/Crawl/Index",
           "SourcesAndConnectors/Documents/Index",
           "SourcesAndConnectors/ConnectorsAndMCP/Index",
@@ -104,9 +102,8 @@
       },
       {
         "group": "Models",
-        "icon": "brain",
-        "root": "Models/Index",
         "pages": [
+          "Models/Index",
           "Models/Providers/Index",
           "Models/OllamaAndAirGapped/Index",
           "Models/BringYourOwnKeys/Index"
@@ -114,9 +111,8 @@
       },
       {
         "group": "Platform",
-        "icon": "layers",
-        "root": "Platform/Index",
         "pages": [
+          "Platform/Index",
           "Platform/Architecture/Index",
           "Platform/RESTAPI/Index",
           "Platform/APIKeysAndWebhooks/Index"
@@ -124,13 +120,11 @@
       },
       {
         "group": "Enterprise",
-        "icon": "building-2",
-        "root": "Enterprise/Index",
         "pages": [
+          "Enterprise/Index",
           "Enterprise/Activation/Index",
           {
             "group": "Governance",
-            "icon": "shield-check",
             "expanded": true,
             "pages": [
               "Enterprise/SSO/Index",
@@ -140,7 +134,6 @@
           },
           {
             "group": "Quality loop",
-            "icon": "gauge",
             "expanded": true,
             "pages": [
               "Enterprise/CompareModels/Index",
@@ -150,7 +143,6 @@
           },
           {
             "group": "Channels",
-            "icon": "smartphone",
             "expanded": true,
             "pages": [
               "Enterprise/Voice/Index",
@@ -161,9 +153,8 @@
       },
       {
         "group": "Security & Trust",
-        "icon": "shield",
-        "root": "SecurityAndTrust/Index",
         "pages": [
+          "SecurityAndTrust/Index",
           "SecurityAndTrust/Sovereignty/Index",
           "SecurityAndTrust/SecurityPolicy/Index",
           "SecurityAndTrust/License/Index"
@@ -171,9 +162,8 @@
       },
       {
         "group": "Support",
-        "icon": "life-buoy",
-        "root": "Support/Index",
         "pages": [
+          "Support/Index",
           "Support/Contact/Index",
           "Support/HelpfulLinks/Index"
         ]
@@ -189,25 +179,52 @@
       {
         "header": "Product",
         "items": [
-          { "label": "Website", "href": "https://www.ragsuite.de" },
-          { "label": "Pricing", "href": "https://www.ragsuite.de/pricing/#comparison" },
-          { "label": "Open source", "href": "https://github.com/ragsuite/RAGSuite" }
+          {
+            "label": "Website",
+            "href": "https://www.ragsuite.de"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://www.ragsuite.de/pricing/#comparison"
+          },
+          {
+            "label": "Open source",
+            "href": "https://github.com/ragsuite/RAGSuite"
+          }
         ]
       },
       {
         "header": "Documentation",
         "items": [
-          { "label": "docs.ragsuite.de", "href": "https://docs.ragsuite.de" },
-          { "label": "Getting Started", "href": "/GettingStarted/Index" },
-          { "label": "Enterprise", "href": "/Enterprise/Index" },
-          { "label": "Security & Trust", "href": "/SecurityAndTrust/Index" }
+          {
+            "label": "docs.ragsuite.de",
+            "href": "https://docs.ragsuite.de"
+          },
+          {
+            "label": "Getting Started",
+            "href": "/GettingStarted/Index"
+          },
+          {
+            "label": "Enterprise",
+            "href": "/Enterprise/Index"
+          },
+          {
+            "label": "Security & Trust",
+            "href": "/SecurityAndTrust/Index"
+          }
         ]
       },
       {
         "header": "Contact",
         "items": [
-          { "label": "sales@ragsuite.de", "href": "mailto:sales@ragsuite.de" },
-          { "label": "NITSAN", "href": "https://nitsan.ai/" }
+          {
+            "label": "sales@ragsuite.de",
+            "href": "mailto:sales@ragsuite.de"
+          },
+          {
+            "label": "NITSAN",
+            "href": "https://nitsan.ai/"
+          }
         ]
       }
     ]

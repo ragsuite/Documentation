@@ -73,4 +73,5 @@ mint dev
 - [ ] `docs.json` slugs resolve
 - [ ] Commands match `@ragsuite/ragsuite` README
 - [ ] Light/dark CSS still readable
+- [ ] Chrome: no blanket `header a svg` rules; mark logo + CSS label; npm CLI text-only; eyebrows `section`; neutral (not green) native sidebar scrollbar
 - [ ] No commit/push unless asked

@@ -2,7 +2,6 @@
 title: "Architecture"
 description: "High-level RAGSuite architecture — FastAPI, Expo, Postgres, Redis, ChromaDB."
 sidebarTitle: "Architecture"
-icon: "sitemap"
 ---
 
 RAGSuite Community Edition is a self-hosted RAG platform:
@@ -14,7 +13,7 @@ RAGSuite (FastAPI · PostgreSQL · Redis · ChromaDB)
         ↓
 Console + Widgets (AI Search · AI Chatbot)
         ↓
-LLMs (hosted APIs with your keys · or Ollama locally)
+LLMs (OpenAI · Anthropic · Mistral · Gemini · or Custom LLM / Ollama locally)
 ```
 
 ## Components

@@ -2,7 +2,6 @@
 title: "What is RAGSuite?"
 description: "RAGSuite is a self-hosted platform for citation-backed AI Search and AI Chatbot on your infrastructure."
 sidebarTitle: "What is RAGSuite?"
-icon: "book-open"
 ---
 
 RAGSuite is a **sovereign enterprise AI platform**: self-hosted or air-gapped RAG for teams that need answers grounded in their own documents — with a citation on every reply.
@@ -29,7 +28,7 @@ RAGSuite is a **sovereign enterprise AI platform**: self-hosted or air-gapped RA
 | Cache / jobs | Redis |
 | Vectors | ChromaDB |
 | Deploy | Native processes or Docker Compose |
-| Local LLMs | Ollama (optional) |
+| Local LLMs | Custom LLM / Ollama (optional) |
 
 You bring your own model keys or run local models. Community Edition does not require sending your data to an external AI company.
 

@@ -1,8 +1,7 @@
 ---
 title: "Getting Started"
 description: "Install RAGSuite Community Edition with the official CLI, Docker, or a git clone."
-sidebarTitle: "Overview"
-icon: "rocket"
+sidebarTitle: "Introduction"
 ---
 
 <div className="rg-landing-hero">

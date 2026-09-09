@@ -2,7 +2,6 @@
 title: "Ports & prerequisites"
 description: "Ports and tool versions for RAGSuite native and Docker installs."
 sidebarTitle: "Ports & prereqs"
-icon: "server"
 ---
 
 Requirements match the official Platform Manager CLI ([`@ragsuite/ragsuite`](https://www.npmjs.com/package/@ragsuite/ragsuite)).

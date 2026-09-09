@@ -1,13 +1,21 @@
 ---
 title: "Ollama & air-gapped"
-description: "Run local models with Ollama — zero egress LLM traffic when you keep inference on-prem."
+description: "Run Custom LLM / Ollama models locally — curated chat and embedding IDs, zero egress when inference stays on-prem."
 sidebarTitle: "Ollama & air-gapped"
-icon: "cpu"
 ---
 
 **Edition:** Community
 
-For air-gapped or strict-egress environments, run models locally with **Ollama** (default base URL typically `http://localhost:11434` via `OLLAMA_BASE_URL` in backend configuration).
+For air-gapped or strict-egress environments, use the **Custom LLM / Ollama** provider (default base URL typically `http://localhost:11434` via `OLLAMA_BASE_URL` in backend configuration).
+
+## Curated models
+
+| Role | Curated models |
+|------|----------------|
+| Chat | `custom-default`, `llama3:8b`, `mistral`, `gemma2`, `gemma3:27b-cloud`, `gemma4:31b-cloud` |
+| Embeddings | `jina/jina-embeddings-v2-base-de` |
+
+When the Ollama host is reachable, live discovery can surface **additional chat** models beyond this curated list. Runtime may also accept extra embeddings (for example `nomic-embed-text`, `all-minilm`, or Jina EN) that are not in the picker — see [Providers](/Models/Providers/Index).
 
 ## Why teams use this
 
@@ -19,7 +27,7 @@ For air-gapped or strict-egress environments, run models locally with **Ollama**
 
 1. Install and run Ollama on a host reachable from the RAGSuite API.
 2. Set `OLLAMA_BASE_URL` in backend env.
-3. Select the local model in the console for the project.
+3. Select **Custom LLM / Ollama** and a curated (or discovered) model in the console for the project.
 4. Verify answers still cite your ingested sources (retrieval remains yours either way).
 
-Hosted models remain optional — your keys, your choice per project.
+Hosted providers remain optional — your keys, your choice per project. Full curated catalogs: [Providers](/Models/Providers/Index).

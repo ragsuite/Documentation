@@ -2,7 +2,6 @@
 title: "API keys & webhooks"
 description: "Use RAGSuite API keys and webhook plumbing for integrations on the platform spine."
 sidebarTitle: "API keys & webhooks"
-icon: "link-2"
 ---
 
 **Edition:** Platform (Community includes the practitioner surfaces that use them)

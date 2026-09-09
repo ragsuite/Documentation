@@ -31,7 +31,18 @@ mint dev
 | `SourcesAndConnectors/` | Crawl, documents, MCP, widgets |
 | `Enterprise/` | EE features (license required) |
 | `_static/` | Logos and favicon |
+| `custom.css` | Chrome polish (sidebar, logo label, readability) |
 | `.cursor/skills/mintlify-ragsuite-docs/` | Authoring skill for this repo |
+
+## Chrome / custom.css
+
+Keep these rules when editing docs chrome:
+
+- **Logo:** `docs.json` points at mark-only SVGs (`_static/ragsuite-mark-light.svg` / `ragsuite-mark-dark.svg`). The **RAGSuite Docs** title is a CSS `::after` on the home logo link — do not put wordmark text inside the SVG.
+- **Never** style all `header a svg` / `header a img`. That stretches Lucide navbar icons into distorted blobs. Size only `header a[href="/"] img` (and footer equivalent); keep Website/GitHub icons at `1rem` square.
+- **npm CLI:** No Lucide `package` icon (the cube reads like Cursor’s mark). Text-only link in `docs.json`.
+- **Eyebrows:** `"section"` — avoid breadcrumbs that repeat **RAGSuite Docs** above the page H1.
+- **Scrollbars:** Hide Mintlify Base UI custom thumbs (they leave a white box in dark mode). Show a **neutral gray** native sidebar scrollbar only — never brand green (`#8fd4ae` / primary).
 
 ## Authenticity
 
