@@ -1,5 +1,4 @@
 ---
-title: "SSO"
 description: "RAGSuite Enterprise SSO with Google OIDC — single sign-on on your infrastructure."
 sidebarTitle: "SSO"
 ---

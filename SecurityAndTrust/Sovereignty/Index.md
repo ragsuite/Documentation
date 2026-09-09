@@ -1,5 +1,4 @@
 ---
-title: "Sovereignty"
 description: "RAGSuite runs on your infrastructure — no telemetry, citations, local models via Ollama."
 sidebarTitle: "Sovereignty"
 ---

@@ -1,5 +1,4 @@
 ---
-title: "Architecture"
 description: "High-level RAGSuite architecture — FastAPI, Expo, Postgres, Redis, ChromaDB."
 sidebarTitle: "Architecture"
 ---

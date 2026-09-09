@@ -1,5 +1,4 @@
 ---
-title: "Enterprise activation"
 description: "Activate RAGSuite Enterprise with offline.key and encbundle using the Platform Manager CLI."
 sidebarTitle: "Activation"
 ---

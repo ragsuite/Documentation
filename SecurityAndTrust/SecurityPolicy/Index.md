@@ -1,5 +1,4 @@
 ---
-title: "Security policy"
 description: "How to report RAGSuite security vulnerabilities — private disclosure to sales@ragsuite.de."
 sidebarTitle: "Security policy"
 ---

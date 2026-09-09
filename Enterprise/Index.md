@@ -1,5 +1,4 @@
 ---
-title: "Enterprise"
 description: "RAGSuite Enterprise — SSO, RBAC, Compare Models, audit, analytics, voice, mobile Beta."
 sidebarTitle: "Enterprise overview"
 ---

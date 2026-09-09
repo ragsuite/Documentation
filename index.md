@@ -1,5 +1,4 @@
 ---
-title: "RAGSuite documentation"
 description: "Official documentation for RAGSuite — self-hosted, citation-backed AI Search and AI Chatbot on your infrastructure."
 sidebarTitle: "Home"
 keywords:

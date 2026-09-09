@@ -1,5 +1,4 @@
 ---
-title: "Widgets & embeds"
 description: "Embed RAGSuite AI Search and AI Chatbot widgets with citation-backed streaming answers."
 sidebarTitle: "Widgets"
 ---

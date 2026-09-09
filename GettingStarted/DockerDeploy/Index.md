@@ -1,5 +1,4 @@
 ---
-title: "Docker deploy"
 description: "Run RAGSuite with Docker via the official CLI or docker compose from a clone."
 sidebarTitle: "Docker"
 ---

@@ -1,5 +1,4 @@
 ---
-title: "What is RAGSuite?"
 description: "RAGSuite is a self-hosted platform for citation-backed AI Search and AI Chatbot on your infrastructure."
 sidebarTitle: "What is RAGSuite?"
 ---

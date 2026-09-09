@@ -1,5 +1,4 @@
 ---
-title: "Analytics"
 description: "RAGSuite analytics — Community overview with advanced analytics in Enterprise."
 sidebarTitle: "Analytics"
 ---

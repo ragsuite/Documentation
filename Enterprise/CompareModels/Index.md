@@ -1,5 +1,4 @@
 ---
-title: "Compare Models"
 description: "Enterprise Compare Models — run one query across models and score answers on your infrastructure."
 sidebarTitle: "Compare Models"
 ---

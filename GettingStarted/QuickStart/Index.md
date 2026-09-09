@@ -1,5 +1,4 @@
 ---
-title: "Quick Start"
 description: "Install RAGSuite Community Edition in minutes with the official CLI — or run from a git clone."
 sidebarTitle: "Quick Start"
 ---

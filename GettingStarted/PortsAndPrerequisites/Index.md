@@ -1,5 +1,4 @@
 ---
-title: "Ports & prerequisites"
 description: "Ports and tool versions for RAGSuite native and Docker installs."
 sidebarTitle: "Ports & prereqs"
 ---

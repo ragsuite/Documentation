@@ -1,5 +1,4 @@
 ---
-title: "Community vs Enterprise"
 description: "What ships in RAGSuite Community Edition versus Enterprise."
 sidebarTitle: "CE vs EE"
 ---

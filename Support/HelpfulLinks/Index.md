@@ -1,5 +1,4 @@
 ---
-title: "Helpful links"
 description: "Official RAGSuite links — website, GitHub, npm CLI, pricing, documentation hubs."
 sidebarTitle: "Helpful links"
 ---

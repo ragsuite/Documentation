@@ -1,5 +1,4 @@
 ---
-title: "Support"
 description: "RAGSuite support contacts — sales@ragsuite.de and German service partners."
 sidebarTitle: "Support overview"
 ---

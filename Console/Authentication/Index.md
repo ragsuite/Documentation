@@ -1,5 +1,4 @@
 ---
-title: "Authentication"
 description: "RAGSuite Community auth — password login, 2FA and sessions; SSO is Enterprise."
 sidebarTitle: "Authentication"
 ---

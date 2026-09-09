@@ -1,5 +1,4 @@
 ---
-title: "Sources & Connectors"
 description: "Ingest and connect knowledge — crawl, upload, MCP, Gmail, n8n Beta, and widgets."
 sidebarTitle: "Sources overview"
 ---

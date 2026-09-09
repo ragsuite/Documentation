@@ -1,5 +1,4 @@
 ---
-title: "AI Search"
 description: "Citation-backed AI Search across your documents — console and embeddable widget."
 sidebarTitle: "AI Search"
 ---

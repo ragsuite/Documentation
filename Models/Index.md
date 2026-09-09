@@ -1,5 +1,4 @@
 ---
-title: "Models"
 description: "RAGSuite providers — OpenAI, Anthropic, Mistral, Google Gemini, or Custom LLM / Ollama with your keys."
 sidebarTitle: "Models overview"
 ---

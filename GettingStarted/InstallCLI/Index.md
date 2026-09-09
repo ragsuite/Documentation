@@ -1,5 +1,4 @@
 ---
-title: "Install with CLI"
 description: "Install RAGSuite Community Edition with the official Platform Manager CLI @ragsuite/ragsuite."
 sidebarTitle: "Install CLI"
 ---

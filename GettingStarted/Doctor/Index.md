@@ -1,5 +1,4 @@
 ---
-title: "Doctor"
 description: "Verify RAGSuite prerequisites with ragsuite doctor before you start the stack."
 sidebarTitle: "Doctor"
 ---

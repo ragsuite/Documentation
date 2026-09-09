@@ -1,5 +1,4 @@
 ---
-title: "Security & Trust"
 description: "RAGSuite sovereignty, security policy, and licensing — inspectable, self-hosted AI."
 sidebarTitle: "Security overview"
 ---

@@ -1,5 +1,4 @@
 ---
-title: "Configuration"
 description: "Configure RAGSuite secrets, SMTP, and URLs in .env for CLI or clone installs."
 sidebarTitle: "Configuration"
 ---
