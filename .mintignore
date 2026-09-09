@@ -1,0 +1,13 @@
+# Authoring / tooling — not published pages
+.cursor/
+scripts/
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Optional local reports
+performance-audit.md
+SLA-skills.md

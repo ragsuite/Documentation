@@ -1,0 +1,244 @@
+/* RAGSuite docs — Perplexity-comparable polish (Mintlify, light + dark + responsive) */
+
+:root {
+  --rg-brand: #0b3d2e;
+  --rg-brand-mid: #1a6b4f;
+  --rg-brand-soft: #e8f5f0;
+  --rg-brand-deep: #06261c;
+  --rg-radius: 12px;
+  --rg-radius-pill: 999px;
+  --rg-prose-max: 46rem;
+  --rg-touch: 44px;
+}
+
+/* ---- Hero / landing ---- */
+
+.rg-landing-hero {
+  margin: 0.25rem 0 1.75rem;
+  max-width: var(--rg-prose-max);
+}
+
+.rg-landing-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--rg-brand);
+  opacity: 0.9;
+  margin: 0 0 0.65rem;
+}
+
+.dark .rg-landing-eyebrow {
+  color: #7dcea0;
+  opacity: 1;
+}
+
+.rg-landing-title {
+  margin: 0 0 0.85rem;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.rg-landing-subtitle {
+  font-size: 1.08rem;
+  line-height: 1.55;
+  opacity: 0.88;
+  max-width: 40rem;
+  margin: 0;
+}
+
+.dark .rg-landing-subtitle {
+  opacity: 0.78;
+}
+
+.rg-landing-section {
+  margin: 2.75rem 0 1.25rem;
+}
+
+.rg-landing-section-title {
+  margin: 0.35rem 0 1.15rem;
+  letter-spacing: -0.015em;
+}
+
+/* ---- CTA panel ---- */
+
+.rg-cta-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem 1.35rem;
+  margin: 1.25rem 0 2rem;
+  border-radius: var(--rg-radius);
+  border: 1px solid color-mix(in srgb, var(--rg-brand) 22%, transparent);
+  background: color-mix(in srgb, var(--rg-brand-soft) 75%, transparent);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--rg-brand) 6%, transparent);
+}
+
+.dark .rg-cta-panel {
+  border-color: color-mix(in srgb, #7dcea0 28%, transparent);
+  background: color-mix(in srgb, var(--rg-brand-deep) 65%, #0a0a0a);
+  box-shadow: none;
+}
+
+.rg-cta-panel p {
+  margin: 0;
+  line-height: 1.55;
+  opacity: 0.92;
+}
+
+.rg-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.rg-cta-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--rg-touch);
+  padding: 0.55rem 1.15rem;
+  border-radius: var(--rg-radius-pill);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.rg-cta-primary {
+  background: var(--rg-brand);
+  color: #f4faf7 !important;
+}
+
+.rg-cta-primary:hover {
+  background: var(--rg-brand-mid);
+  opacity: 1;
+}
+
+.dark .rg-cta-primary {
+  background: var(--rg-brand-mid);
+  color: #f4faf7 !important;
+}
+
+.dark .rg-cta-primary:hover {
+  background: #24956c;
+}
+
+.rg-cta-secondary {
+  border: 1px solid color-mix(in srgb, var(--rg-brand) 35%, transparent);
+  color: var(--rg-brand) !important;
+  background: transparent;
+}
+
+.rg-cta-secondary:hover {
+  background: color-mix(in srgb, var(--rg-brand-soft) 90%, white);
+}
+
+.dark .rg-cta-secondary {
+  border-color: color-mix(in srgb, #7dcea0 40%, transparent);
+  color: #c8ebd8 !important;
+}
+
+.dark .rg-cta-secondary:hover {
+  background: color-mix(in srgb, #7dcea0 12%, transparent);
+}
+
+/* ---- Content readability ---- */
+
+.rg-meta-line {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin: 0 0 1.25rem;
+}
+
+/* Tables: prevent layout blowouts */
+article .prose table,
+article table {
+  font-size: 0.95rem;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.dark article table th,
+.dark article table td {
+  border-color: color-mix(in srgb, #ffffff 12%, transparent);
+}
+
+/* Code: keep readable, no page overflow */
+article pre {
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+article pre,
+article code {
+  font-size: 0.9em;
+}
+
+/* Focus visibility for custom CTAs */
+.rg-cta-actions a:focus-visible {
+  outline: 2px solid var(--rg-brand-mid);
+  outline-offset: 2px;
+}
+
+.dark .rg-cta-actions a:focus-visible {
+  outline-color: #7dcea0;
+}
+
+/* Soften stacked custom H1 under Mintlify chrome */
+.rg-landing-hero + h1,
+.rg-landing-hero h1.rg-landing-title {
+  scroll-margin-top: 5rem;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 768px) {
+  .rg-landing-hero {
+    margin-bottom: 1.25rem;
+  }
+
+  .rg-landing-title {
+    font-size: clamp(1.65rem, 6vw, 2.1rem);
+  }
+
+  .rg-landing-subtitle {
+    font-size: 1rem;
+  }
+
+  .rg-cta-panel {
+    padding: 1.1rem 1.15rem;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .rg-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rg-cta-actions a {
+    width: 100%;
+  }
+
+  .rg-landing-section {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .rg-cta-panel {
+    border-radius: 10px;
+  }
+}
+
+/* Prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .rg-cta-actions a {
+    transition: none;
+  }
+}
