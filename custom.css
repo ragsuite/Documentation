@@ -256,6 +256,22 @@ article code {
 
 /* ---- Claude-style left sidebar (open tree, contrast) ---- */
 
+/* Wider left nav (Mintlify default ~18rem is too tight) */
+#sidebar,
+aside.z-20.sticky,
+nav[aria-label="Pages"].sticky,
+nav[aria-label="Pages"].z-20 {
+  width: 20.5rem !important;
+  min-width: 20.5rem !important;
+  max-width: 20.5rem !important;
+}
+
+#sidebar-content,
+nav[aria-label="Pages"] [data-component-part="scroll-area"],
+aside [data-component-part="scroll-area"] {
+  width: 100% !important;
+}
+
 /* Hide Mintlify Base UI custom scrollbar chrome (double-bar / white remnant) */
 nav[aria-label="Pages"] [data-component-part="scroll-area"] > div:not([data-component-part="scroll-area-viewport"]),
 aside [data-component-part="scroll-area"] > div:not([data-component-part="scroll-area-viewport"]),
@@ -584,6 +600,41 @@ nav[aria-label="Pages"] button[aria-expanded] {
 
 .dark nav[aria-label="Pages"] button[aria-expanded] {
   color: #e8f0ec !important;
+}
+
+/* ---- Page Next/Previous pagination (not full-bleed) ---- */
+
+#pagination,
+nav[aria-label="Pagination"] {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  align-items: stretch !important;
+  gap: 0.75rem !important;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#pagination > a,
+#pagination > * > a,
+nav[aria-label="Pagination"] a {
+  flex: 0 1 auto !important;
+  width: auto !important;
+  max-width: min(18rem, 48%) !important;
+  min-width: 0 !important;
+  box-sizing: border-box;
+}
+
+#pagination a:only-child,
+nav[aria-label="Pagination"] a:only-child {
+  max-width: 18rem !important;
+  margin-left: auto !important;
+}
+
+nav[aria-label="Pagination"] a[href*="Previous"],
+#pagination a:first-child:not(:only-child) {
+  margin-right: auto;
 }
 
 /* ---- Responsive ---- */
