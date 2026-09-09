@@ -1,12 +1,12 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "name": "RAGSuite Docs",
-  "theme": "mint",
+  "name": "RAGSuite",
+  "theme": "luma",
   "description": "Official documentation for RAGSuite \u2014 the sovereign, self-hosted enterprise AI platform by NITSAN.",
   "colors": {
-    "primary": "#0B3D2E",
-    "light": "#2D8F6F",
-    "dark": "#06261C"
+    "primary": "#2563EB",
+    "light": "#3B82F6",
+    "dark": "#1D4ED8"
   },
   "favicon": "/_static/favicon.svg",
   "logo": {
@@ -15,7 +15,8 @@
     "href": "/"
   },
   "appearance": {
-    "default": "dark"
+    "default": "system",
+    "strict": false
   },
   "icons": {
     "library": "lucide"
@@ -30,24 +31,18 @@
   "navbar": {
     "links": [
       {
-        "label": "Website",
-        "href": "https://www.ragsuite.de",
-        "icon": "globe"
-      },
-      {
         "label": "GitHub",
-        "href": "https://github.com/ragsuite/RAGSuite",
-        "icon": "github"
+        "href": "https://github.com/ragsuite/RAGSuite"
       },
       {
-        "label": "npm CLI",
-        "href": "https://www.npmjs.com/package/@ragsuite/ragsuite"
+        "href": "mailto:info@ragsuite.de",
+        "label": "Support"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Get Started",
-      "href": "/GettingStarted/QuickStart/Index"
+      "label": "Book a Demo",
+      "href": "https://ragsuite.de/contact/"
     }
   },
   "navigation": {
@@ -173,7 +168,9 @@
   "footer": {
     "socials": {
       "website": "https://www.ragsuite.de",
-      "github": "https://github.com/ragsuite/RAGSuite"
+      "github": "https://github.com/ragsuite/RAGSuite",
+      "x": "https://x.com/ragsuite",
+      "linkedin": "https://linkedin.com/company/ragsuite"
     },
     "links": [
       {
