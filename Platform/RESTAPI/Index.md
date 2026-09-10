@@ -1,6 +1,8 @@
 ---
+title: "REST API"
 description: "RAGSuite REST API — /api/v1 and interactive OpenAPI docs on port 9090."
 sidebarTitle: "REST API"
+icon: "braces"
 ---
 
 **Edition:** Platform / Community

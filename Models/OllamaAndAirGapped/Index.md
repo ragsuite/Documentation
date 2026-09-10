@@ -1,6 +1,8 @@
 ---
+title: "Ollama & air-gapped"
 description: "Run Custom LLM / Ollama models locally — curated chat and embedding IDs, zero egress when inference stays on-prem."
 sidebarTitle: "Ollama & air-gapped"
+icon: "server"
 ---
 
 **Edition:** Community

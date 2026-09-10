@@ -1,6 +1,8 @@
 ---
+title: "Sovereignty"
 description: "RAGSuite runs on your infrastructure — no telemetry, citations, local models via Ollama."
 sidebarTitle: "Sovereignty"
+icon: "lock"
 ---
 
 RAGSuite is designed for regulated and DACH enterprise buyers who need control:

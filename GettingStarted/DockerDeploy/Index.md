@@ -1,6 +1,8 @@
 ---
+title: "Docker"
 description: "Run RAGSuite with Docker via the official CLI or docker compose from a clone."
 sidebarTitle: "Docker"
+icon: "box"
 ---
 
 Docker is an optional deploy mode. For most Community installs, use the CLI with `--docker`. Native remains the default when you run `ragsuite init` without flags.

@@ -1,6 +1,8 @@
 ---
+title: "Crawl"
 description: "Crawl websites into RAGSuite — depth and source material for citation-backed answers."
 sidebarTitle: "Crawl"
+icon: "globe"
 ---
 
 **Edition:** Community

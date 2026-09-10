@@ -1,6 +1,8 @@
 ---
+title: "Providers"
 description: "Curated LLM providers in RAGSuite — OpenAI, Anthropic, Mistral, Google Gemini, and Custom LLM / Ollama."
 sidebarTitle: "Providers"
+icon: "cloud"
 ---
 
 **Edition:** Community (`llm_providers`)

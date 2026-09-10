@@ -1,4 +1,5 @@
 ---
+title: "Home"
 description: "Official documentation for RAGSuite — self-hosted, citation-backed AI Search and AI Chatbot on your infrastructure."
 sidebarTitle: "Home"
 keywords:
@@ -6,6 +7,7 @@ keywords:
   - "self-hosted RAG"
   - "enterprise AI"
   - "documentation"
+icon: "house"
 ---
 
 <div className="rg-landing-hero">
@@ -30,10 +32,9 @@ ragsuite init
 ragsuite start
 ```
 
-<section className="rg-landing-section">
-  <p className="rg-landing-eyebrow">Product</p>
-  <h2 className="rg-landing-section-title">Build on your own sources</h2>
-</section>
+<p className="rg-landing-eyebrow">Product</p>
+
+## Build on your own sources
 
 <CardGroup cols={2}>
   <Card title="AI Search" icon="search" href="/Console/AISearch/Index">
@@ -50,10 +51,9 @@ ragsuite start
   </Card>
 </CardGroup>
 
-<section className="rg-landing-section">
-  <p className="rg-landing-eyebrow">Open core</p>
-  <h2 className="rg-landing-section-title">Community free. Enterprise when you govern.</h2>
-</section>
+<p className="rg-landing-eyebrow">Open core</p>
+
+## Community free. Enterprise when you govern.
 
 <CardGroup cols={3}>
   <Card title="Community Edition" icon="box" href="/GettingStarted/CommunityVsEnterprise/Index">
@@ -67,10 +67,9 @@ ragsuite start
   </Card>
 </CardGroup>
 
-<section className="rg-landing-section">
-  <p className="rg-landing-eyebrow">Resources</p>
-  <h2 className="rg-landing-section-title">Official links</h2>
-</section>
+<p className="rg-landing-eyebrow">Resources</p>
+
+## Official links
 
 <CardGroup cols={3}>
   <Card title="Website" icon="globe" href="https://www.ragsuite.de">

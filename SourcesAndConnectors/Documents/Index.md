@@ -1,6 +1,8 @@
 ---
+title: "Documents"
 description: "Upload PDF, DOCX, and TXT documents into RAGSuite for grounded retrieval."
 sidebarTitle: "Documents"
+icon: "file-text"
 ---
 
 **Edition:** Community

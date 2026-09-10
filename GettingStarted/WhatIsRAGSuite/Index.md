@@ -1,6 +1,8 @@
 ---
+title: "What is RAGSuite?"
 description: "RAGSuite is a self-hosted platform for citation-backed AI Search and AI Chatbot on your infrastructure."
 sidebarTitle: "What is RAGSuite?"
+icon: "info"
 ---
 
 RAGSuite is a **sovereign enterprise AI platform**: self-hosted or air-gapped RAG for teams that need answers grounded in their own documents — with a citation on every reply.

@@ -1,6 +1,8 @@
 ---
+title: "Compare Models"
 description: "Enterprise Compare Models — run one query across models and score answers on your infrastructure."
 sidebarTitle: "Compare Models"
+icon: "arrow-left-right"
 ---
 
 **Edition:** Enterprise · **Accuracy:** Shipped (CE may show a locked teaser)

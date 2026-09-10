@@ -1,6 +1,8 @@
 ---
+title: "Mobile (Beta)"
 description: "RAGSuite mobile app is Enterprise Beta — citation-backed answers with on-prem sync."
 sidebarTitle: "Mobile (Beta)"
+icon: "smartphone"
 ---
 
 **Edition:** Enterprise · **Status:** Beta

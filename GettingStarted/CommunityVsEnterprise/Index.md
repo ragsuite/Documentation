@@ -1,11 +1,22 @@
 ---
+title: "CE vs EE"
 description: "What ships in RAGSuite Community Edition versus Enterprise."
 sidebarTitle: "CE vs EE"
+icon: "scale"
 ---
 
 RAGSuite is **open core**. Community Edition is a complete product. Enterprise adds organizational governance and quality/compliance tooling.
 
 Commercial comparison: [ragsuite.de/pricing](https://www.ragsuite.de/pricing/#comparison).
+
+<CardGroup cols={2}>
+  <Card title="Start with Community" icon="box" href="/GettingStarted/QuickStart/Index">
+    Self-host the full pipeline for free under Apache 2.0 — no offline key required.
+  </Card>
+  <Card title="Need Enterprise controls?" icon="building-2" href="/Enterprise/Activation/Index">
+    SSO, org RBAC, Compare Models, deep audit/analytics — activate after sales fulfillment.
+  </Card>
+</CardGroup>
 
 ## Community Edition — €0 · Apache 2.0
 

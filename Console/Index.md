@@ -1,7 +1,8 @@
 ---
-title: "Console"
+title: "Console overview"
 description: "Operate AI Search, AI Chatbot, projects, and authentication in the RAGSuite console."
 sidebarTitle: "Console overview"
+icon: "layout-panel-left"
 ---
 
 <div className="rg-landing-hero">
@@ -12,6 +13,17 @@ sidebarTitle: "Console overview"
   </p>
 </div>
 
+After install, day-to-day work happens in the console. Non-technical operators use it to ask questions, check citations, and improve answer quality. Admins use it to manage projects and sign-in.
+
+**What you can do here**
+
+- Run **AI Search** across your corpus and open the source behind every hit.
+- Chat with **AI Chatbot** and follow citations on each reply.
+- Capture feedback so quality improves over time.
+- Isolate knowledge bases with projects; use password auth and 2FA (SSO is Enterprise).
+
+Open `http://localhost:9191` on a local install (or your published console URL).
+
 <div className="rg-cta-panel">
   <p>Explore console workflows for AI Search and AI Chatbot.</p>
   <div className="rg-cta-actions">
@@ -19,6 +31,8 @@ sidebarTitle: "Console overview"
     <a className="rg-cta-secondary" href="/Console/AIChatbot/Index">AI Chatbot</a>
   </div>
 </div>
+
+## In this section
 
 <CardGroup cols={2}>
   <Card title="AI Search" icon="search" href="/Console/AISearch/Index">
@@ -34,6 +48,6 @@ sidebarTitle: "Console overview"
     Isolate knowledge bases and configurations.
   </Card>
   <Card title="Authentication" icon="lock" href="/Console/Authentication/Index">
-    Password auth, 2FA; SSO is Enterprise.
+    Password auth and 2FA; SSO is Enterprise.
   </Card>
 </CardGroup>

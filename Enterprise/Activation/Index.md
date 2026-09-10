@@ -1,6 +1,8 @@
 ---
+title: "Activation"
 description: "Activate RAGSuite Enterprise with offline.key and encbundle using the Platform Manager CLI."
 sidebarTitle: "Activation"
+icon: "circle-check"
 ---
 
 **Community Edition needs no key.** Enterprise is sales-led: your vendor emails three files. Place them in your install root (default `~/ragsuite`). Do **not** unpack the `.encbundle`. Do not hand-edit the key.

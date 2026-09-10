@@ -1,6 +1,8 @@
 ---
+title: "License"
 description: "RAGSuite Community Edition is Apache 2.0; Enterprise modules are separately licensed."
 sidebarTitle: "License"
+icon: "scroll"
 ---
 
 ## Community Edition

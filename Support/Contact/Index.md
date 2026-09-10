@@ -1,6 +1,8 @@
 ---
+title: "Contact"
 description: "Contact RAGSuite — sales@ragsuite.de and German service partner cities."
 sidebarTitle: "Contact"
+icon: "mail"
 ---
 
 ## Primary contact

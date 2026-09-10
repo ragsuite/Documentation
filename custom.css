@@ -1,14 +1,79 @@
 /* RAGSuite docs — Perplexity-comparable polish (Mintlify, light + dark + responsive) */
 
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
 :root {
   --rg-brand: #0b3d2e;
   --rg-brand-mid: #1a6b4f;
   --rg-brand-soft: #e8f5f0;
   --rg-brand-deep: #06261c;
+  --rg-paper: #f4f1ea;
+  --rg-paper-border: #ded7c7;
   --rg-radius: 12px;
   --rg-radius-pill: 999px;
   --rg-prose-max: 46rem;
   --rg-touch: 44px;
+  --rg-font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* Reserve scrollbar space so Search dialog overflow:hidden does not shift content */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Light surface — soft paper cream (marketing site) */
+html:not(.dark),
+html:not(.dark) body {
+  background-color: var(--rg-paper) !important;
+}
+
+/* ---- Frosted glass top bar (match ragsuite.de site-nav) ---- */
+
+header,
+header#navbar,
+#navbar {
+  /* Slightly more translucent than marketing 0.82 so blur reads on docs cream */
+  background-color: rgba(244, 241, 234, 0.68) !important;
+  backdrop-filter: saturate(1.4) blur(14px) !important;
+  -webkit-backdrop-filter: saturate(1.4) blur(14px) !important;
+  border-bottom: 1px solid var(--rg-paper-border) !important;
+}
+
+/*
+  Mintlify paints an opaque absolute inset layer (bg-background-light)
+  that blocks backdrop-filter. Clear it so scrolled content can blur through.
+*/
+header#navbar .absolute.inset-0,
+#navbar .absolute.inset-0,
+header#navbar [class*="bg-background-light"],
+header#navbar [class*="bg-background-dark"],
+#navbar [class*="bg-background-light"],
+#navbar [class*="bg-background-dark"] {
+  background-color: transparent !important;
+  background-image: none !important;
+  background: transparent !important;
+}
+
+/* Inner chrome stays transparent so glass shows through */
+header > *,
+header nav {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.dark header,
+.dark header#navbar,
+.dark #navbar {
+  background-color: rgba(18, 26, 23, 0.78) !important;
+  border-bottom-color: color-mix(in srgb, #ffffff 12%, transparent) !important;
+}
+
+.dark header > *,
+.dark header nav,
+.dark header#navbar .absolute.inset-0,
+.dark #navbar .absolute.inset-0 {
+  background-color: transparent !important;
+  background: transparent !important;
 }
 
 /* ---- Dark readability (surfaces only; keep brand tokens) ---- */
@@ -56,6 +121,24 @@
   color: #f2f7f4;
 }
 
+/* Display headings — Fraunces (ragsuite.de); keep sidebar on Hanken */
+#content-area h1,
+#content-area h2,
+#content-area h3,
+article h1,
+article h2,
+article h3,
+main article h1,
+main article h2,
+main article h3,
+.prose h1,
+.prose h2,
+.prose h3,
+.rg-landing-title,
+.rg-landing-section-title {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif !important;
+}
+
 /* ---- Hero / landing ---- */
 
 .rg-landing-hero {
@@ -71,6 +154,17 @@
   color: var(--rg-brand);
   opacity: 0.9;
   margin: 0 0 0.65rem;
+}
+
+/* Section modules (Product / Open core / Resources): clear air above after cards/code */
+#content-area .rg-landing-eyebrow {
+  margin-top: 3.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.rg-landing-hero .rg-landing-eyebrow,
+#content-area .rg-landing-hero .rg-landing-eyebrow {
+  margin-top: 0;
 }
 
 .dark .rg-landing-eyebrow {
@@ -102,6 +196,16 @@
   margin: 2.75rem 0 1.25rem;
 }
 
+/* Markdown ## after landing eyebrows (TOC-indexed Home sections) */
+.rg-landing-eyebrow + h2,
+p.rg-landing-eyebrow + h2 {
+  margin: 0.35rem 0 1.15rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 650;
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+}
+
 .rg-landing-section-title {
   margin: 0.35rem 0 1.15rem;
   letter-spacing: -0.015em;
@@ -114,7 +218,7 @@
   flex-direction: column;
   gap: 1rem;
   padding: 1.25rem 1.35rem;
-  margin: 1.25rem 0 2rem;
+  margin: 1.25rem 0 2.25rem;
   border-radius: var(--rg-radius);
   border: 1px solid color-mix(in srgb, var(--rg-brand) 22%, transparent);
   background: color-mix(in srgb, var(--rg-brand-soft) 75%, transparent);
@@ -131,12 +235,14 @@
 .rg-cta-panel p {
   margin: 0;
   line-height: 1.55;
-  opacity: 0.92;
+  opacity: 1;
+  font-weight: 500;
+  color: #1a2e26;
 }
 
 .dark .rg-cta-panel p {
-  opacity: 0.95;
-  color: var(--rg-dark-fg-muted);
+  opacity: 1;
+  color: #e8f0ec;
 }
 
 .rg-cta-actions {
@@ -226,7 +332,7 @@ article table {
   color: var(--rg-dark-fg-muted);
 }
 
-/* Code: keep readable, no page overflow */
+/* Code: keep readable, no page overflow — IBM Plex Mono like ragsuite.de */
 article pre {
   max-width: 100%;
   overflow-x: auto;
@@ -234,8 +340,49 @@ article pre {
 }
 
 article pre,
-article code {
-  font-size: 0.9em;
+article code,
+article pre code,
+.prose code,
+.prose pre {
+  font-family: var(--rg-font-mono) !important;
+  font-size: 0.95em;
+}
+
+/* Font-only contrast boost inside code blocks — do not restyle container chrome */
+article pre,
+.prose pre {
+  font-weight: 500 !important;
+  color: #e8e8e8;
+  -webkit-font-smoothing: antialiased;
+}
+
+article pre code,
+article pre span,
+.prose pre code,
+.prose pre span {
+  font-weight: 500 !important;
+}
+
+/* Brighten common Shiki token hues on dark code surfaces */
+article pre span[style*="color"],
+.prose pre span[style*="color"] {
+  filter: brightness(1.18) saturate(1.05);
+}
+
+/* Mintlify card body copy — bolder / darker; leave card chrome alone */
+#content-area a[href] .prose.font-normal,
+#content-area a[href] .prose.mt-1,
+#content-area a[href] .text-gray-600,
+#content-area a[href] p {
+  font-weight: 500 !important;
+  color: #2a3530 !important;
+  opacity: 1 !important;
+}
+
+.dark #content-area a[href] .prose.font-normal,
+.dark #content-area a[href] .prose.mt-1,
+.dark #content-area a[href] p {
+  color: #d8e4de !important;
 }
 
 /* Focus visibility for custom CTAs */
@@ -256,29 +403,102 @@ article code {
 
 /* ---- Claude-style left sidebar (open tree, contrast) ---- */
 
-/* Wider left nav (Mintlify default ~18rem is too tight) */
-#sidebar,
-aside.z-20.sticky,
-nav[aria-label="Pages"].sticky,
-nav[aria-label="Pages"].z-20 {
+/*
+  Mintlify luma: nav#sidebar-content[aria-label="Pages"] is position:fixed; w-56.
+  #sidebar and #pagination IDs are 0×0 jump-link dummies — never size those.
+  width:100% on the fixed nav resolves against the viewport (full-bleed active pill).
+*/
+nav#sidebar-content,
+nav[aria-label="Pages"] {
   width: 20.5rem !important;
   min-width: 20.5rem !important;
   max-width: 20.5rem !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  /* Match footer paper tone + thin divider vs main content */
+  background-color: #ede8dc !important;
+  border-right: 1px solid #ded7c7 !important;
 }
 
-#sidebar-content,
+.dark nav#sidebar-content,
+.dark nav[aria-label="Pages"] {
+  background-color: var(--rg-dark-bg-elevated) !important;
+  border-right-color: color-mix(in srgb, #ffffff 12%, transparent) !important;
+}
+
 nav[aria-label="Pages"] [data-component-part="scroll-area"],
-aside [data-component-part="scroll-area"] {
+#sidebar-content [data-component-part="scroll-area"],
+#navigation-items {
   width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
 
-/* Hide Mintlify Base UI custom scrollbar chrome (double-bar / white remnant) */
+/* Wider Pages sidebar: offset main chrome so prose is not covered. */
+@media (min-width: 1024px) {
+  #body-content {
+    padding-left: 20.5rem !important;
+  }
+
+  /* Show On-this-page column from lg (Mintlify defaults to hidden until xl) */
+  main > div[class*="xl:flex"][class*="sticky"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-self: flex-start !important;
+  }
+}
+
+/*
+  Pack prose + On-this-page beside each other, then center that pair in the
+  main canvas (after the Pages nav). Do not restore flex:1 on the middle column
+  — that parks TOC on the far right with a huge void.
+*/
+@media (min-width: 1280px) {
+  main.flex {
+    justify-content: center !important;
+  }
+
+  main.flex > div.flex-1.min-w-0 {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0;
+  }
+
+  #content-area {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    /* Fixed prose width — avoid %/flex shrink loops that collapse to ~390px */
+    width: min(43.5rem, calc(100vw - 20.5rem - 17rem)) !important;
+    max-width: min(43.5rem, calc(100vw - 20.5rem - 17rem)) !important;
+  }
+
+  main > div[class*="xl:flex"][class*="sticky"] {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-left: 0 !important;
+    flex: 0 0 auto !important;
+  }
+
+  nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    position: sticky !important;
+    top: 5.5rem !important;
+    z-index: 5 !important;
+    min-width: 11.5rem;
+    max-width: 15rem;
+    align-self: start;
+  }
+}
+
+/* Hide Mintlify Base UI custom scrollbar chrome (left Pages sidebar only — never TOC aside) */
 nav[aria-label="Pages"] [data-component-part="scroll-area"] > div:not([data-component-part="scroll-area-viewport"]),
-aside [data-component-part="scroll-area"] > div:not([data-component-part="scroll-area-viewport"]),
 #sidebar-content [data-component-part="scroll-area"] > div:not([data-component-part="scroll-area-viewport"]),
 #sidebar-content [data-radix-scroll-area-scrollbar],
-nav[aria-label="Pages"] [data-radix-scroll-area-scrollbar],
-aside [data-radix-scroll-area-scrollbar] {
+nav[aria-label="Pages"] [data-radix-scroll-area-scrollbar] {
   display: none !important;
   width: 0 !important;
   height: 0 !important;
@@ -291,8 +511,6 @@ aside [data-radix-scroll-area-scrollbar] {
    Mintlify sets .base-ui-disable-scrollbar { scrollbar-width: none; display:none on webkit } — override it. */
 nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"],
 nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar,
-aside [data-component-part="scroll-area-viewport"],
-aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar,
 #sidebar-content [data-component-part="scroll-area-viewport"],
 #sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar {
   overflow-x: hidden !important;
@@ -304,8 +522,6 @@ aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar,
 
 nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"]::-webkit-scrollbar,
 nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar,
-aside [data-component-part="scroll-area-viewport"]::-webkit-scrollbar,
-aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar,
 #sidebar-content [data-component-part="scroll-area-viewport"]::-webkit-scrollbar,
 #sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar {
   display: block !important;
@@ -317,8 +533,6 @@ aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-w
 
 nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-track,
 nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-track,
-aside [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-track,
-aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-track,
 #sidebar-content [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-track,
 #sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-track {
   background: transparent !important;
@@ -326,8 +540,6 @@ aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-w
 
 nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
 nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb,
-aside [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
-aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb,
 #sidebar-content [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
 #sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb {
   background-color: #c5cad1 !important;
@@ -339,8 +551,6 @@ aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-w
 
 .dark nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"],
 .dark nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar,
-.dark aside [data-component-part="scroll-area-viewport"],
-.dark aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar,
 .dark #sidebar-content [data-component-part="scroll-area-viewport"],
 .dark #sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar {
   scrollbar-color: #5a6570 transparent !important;
@@ -348,8 +558,6 @@ aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-w
 
 .dark nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
 .dark nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb,
-.dark aside [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
-.dark aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb,
 .dark #sidebar-content [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-thumb,
 .dark #sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-thumb {
   background-color: #5a6570 !important;
@@ -357,29 +565,9 @@ aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-w
 
 nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-corner,
 nav[aria-label="Pages"] [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-corner,
-aside [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-corner,
-aside [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-corner,
 #sidebar-content [data-component-part="scroll-area-viewport"]::-webkit-scrollbar-corner,
 #sidebar-content [data-component-part="scroll-area-viewport"].base-ui-disable-scrollbar::-webkit-scrollbar-corner {
   background: transparent !important;
-}
-
-/* Force nested groups open; hide accordion chevrons.
-   Only expand collapsed group lists — do not break the scroll viewport. */
-nav[aria-label="Pages"] li > button[aria-expanded="false"] + ul,
-nav[aria-label="Pages"] li > button[aria-expanded="false"] ~ ul {
-  display: block !important;
-  height: auto !important;
-  max-height: none !important;
-  overflow: visible !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-nav[aria-label="Pages"] button svg:last-child,
-nav[aria-label="Pages"] [aria-expanded] > svg:last-child,
-#sidebar-content button svg:last-child {
-  display: none !important;
 }
 
 /* Section headers (group labels) — Claude weight */
@@ -393,8 +581,6 @@ nav[aria-label="Pages"] button[aria-expanded],
   min-height: auto !important;
   padding-top: 0.15rem !important;
   padding-bottom: 0.15rem !important;
-  cursor: default !important;
-  pointer-events: none !important;
 }
 
 nav[aria-label="Pages"] > ul > li:first-child h3,
@@ -430,21 +616,28 @@ nav[aria-label="Pages"] a,
   margin: 0.05rem 0 !important;
   line-height: 1.35;
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   border-radius: 0.5rem;
   font-size: 0.925rem !important;
   font-weight: 400 !important;
   text-decoration: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-nav[aria-label="Pages"] ul ul a,
-#sidebar-content ul ul a {
-  padding-left: 0.85rem !important;
+/*
+  Luma DOM: group titles use .sidebar-group-header.pl-4 (~16px) + icon.
+  Child rows (icon + label) must start to the RIGHT of the parent title text.
+*/
+nav[aria-label="Pages"] .sidebar-group a,
+#sidebar-content .sidebar-group a {
+  padding-left: 2.75rem !important;
 }
 
-nav[aria-label="Pages"] ul ul ul a,
-#sidebar-content ul ul ul a {
-  padding-left: 1.15rem !important;
+/* Top-level Home sits outside a section header — keep flush with group title icons */
+nav[aria-label="Pages"] [data-component-part="scroll-area-content"] > .text-sm > ul.sidebar-group > li > a,
+#sidebar-content [data-component-part="scroll-area-content"] > .text-sm > ul.sidebar-group > li > a {
+  padding-left: 1rem !important;
 }
 
 .dark nav[aria-label="Pages"] a,
@@ -456,30 +649,24 @@ nav[aria-label="Pages"] ul ul ul a,
 nav[aria-label="Pages"] a,
 #sidebar-content a {
   color: #2a3d35 !important;
+  border-left: 2px solid transparent !important;
+  box-sizing: border-box !important;
 }
 
+/* Hover — paper wash (ragsuite.de), not muddy green */
 .dark nav[aria-label="Pages"] a:hover,
 .dark #sidebar-content a:hover {
   color: #f2f7f4 !important;
-  background: color-mix(in srgb, #ffffff 7%, transparent);
+  background: color-mix(in srgb, #ffffff 6%, transparent) !important;
 }
 
 nav[aria-label="Pages"] a:hover,
 #sidebar-content a:hover {
-  color: #0b3d2e !important;
-  background: color-mix(in srgb, #0b3d2e 6%, transparent);
+  color: var(--rg-brand) !important;
+  background: color-mix(in srgb, var(--rg-paper-border) 55%, transparent) !important;
 }
 
-/* Active pill — same weight as other links (no bold on select) */
-.dark nav[aria-label="Pages"] a[aria-current="page"],
-.dark nav[aria-label="Pages"] a[data-active="true"],
-.dark #sidebar-content a[aria-current="page"],
-.dark #sidebar-content a[data-active="true"] {
-  color: #ffffff !important;
-  background: color-mix(in srgb, #ffffff 12%, transparent) !important;
-  font-weight: 400 !important;
-}
-
+/* Active — brand-soft fill + left accent bar (Claude-like) */
 nav[aria-label="Pages"] a[aria-current="page"],
 nav[aria-label="Pages"] a[data-active="true"],
 #sidebar-content a[aria-current="page"],
@@ -496,8 +683,75 @@ nav[aria-label="Pages"] a[aria-current="page"],
 nav[aria-label="Pages"] a[data-active="true"],
 #sidebar-content a[aria-current="page"],
 #sidebar-content a[data-active="true"] {
-  color: #0b3d2e !important;
-  background: color-mix(in srgb, #0b3d2e 10%, transparent) !important;
+  color: var(--rg-brand) !important;
+  background: var(--rg-brand-soft) !important;
+  border-left-color: var(--rg-brand) !important;
+}
+
+.dark nav[aria-label="Pages"] a[aria-current="page"],
+.dark nav[aria-label="Pages"] a[data-active="true"],
+.dark #sidebar-content a[aria-current="page"],
+.dark #sidebar-content a[data-active="true"] {
+  color: #ffffff !important;
+  background: color-mix(in srgb, #ffffff 10%, transparent) !important;
+  border-left-color: #2D8F6F !important;
+  font-weight: 400 !important;
+}
+
+/*
+  On-this-page TOC — Claude-style left active bar.
+  Mintlify TOC links use --toc-* custom properties.
+*/
+nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) {
+  border-left: 1px solid var(--rg-paper-border);
+  padding-left: 0.75rem;
+}
+
+.dark nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) {
+  border-left-color: color-mix(in srgb, #ffffff 12%, transparent);
+}
+
+nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a {
+  border-left: 2px solid transparent !important;
+  padding-left: 0.75rem !important;
+  margin-left: -1px;
+  color: #3d4a44 !important;
+}
+
+nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) h2 {
+  color: #2a3530 !important;
+  font-weight: 600 !important;
+}
+
+.dark nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a {
+  color: #9aa8a1 !important;
+}
+
+nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a:hover {
+  color: var(--rg-brand) !important;
+}
+
+.dark nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a:hover {
+  color: #e8f0ec !important;
+}
+
+nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a[aria-current],
+nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a[aria-current="location"],
+nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a[aria-current="true"],
+nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) li[data-active] > a,
+nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a.text-primary {
+  color: var(--rg-brand) !important;
+  border-left-color: var(--rg-brand) !important;
+  font-weight: 500 !important;
+}
+
+.dark nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a[aria-current],
+.dark nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a[aria-current="location"],
+.dark nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a[aria-current="true"],
+.dark nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) li[data-active] > a,
+.dark nav:not([aria-label="Pages"]):not([aria-label="Pagination"]):has(h2) a.text-primary {
+  color: #ffffff !important;
+  border-left-color: #2D8F6F !important;
 }
 
 nav[aria-label="Pages"] li,
@@ -506,6 +760,8 @@ nav[aria-label="Pages"] ul,
 #sidebar-content ul {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
 }
 
 nav[aria-label="Pages"] ul,
@@ -554,6 +810,64 @@ footer a[href="/"]::after {
   color: #0b3d2e;
 }
 
+/* Footer surface: match ragsuite.de site-footer (#EDE8DC / #DED7C7) */
+footer,
+footer#footer,
+footer.advanced-footer {
+  background-color: #ede8dc !important;
+  border-top: 1px solid #ded7c7 !important;
+  color: #1b1a17;
+}
+
+.dark footer,
+.dark footer#footer,
+.dark footer.advanced-footer {
+  background-color: var(--rg-dark-bg-elevated) !important;
+  border-top-color: color-mix(in srgb, #ffffff 12%, transparent) !important;
+  color: var(--rg-dark-fg-muted);
+}
+
+/* Hide Mintlify “Powered by” attribution only — never collapse footer columns */
+footer a[href*="mintlify.com"][href*="powered" i],
+footer a[href*="mintlify.com"][href*="poweredBy" i],
+a[href*="mintlify.com"][class*="powered"],
+footer [class*="powered-by"],
+footer [class*="PoweredBy"],
+footer div:has(> a[href*="mintlify.com"][href*="powered" i]),
+footer div:has(> a[href*="mintlify.com"][href*="poweredBy" i]) {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Slim footer: cut Mintlify py-28 / gap-12 fat band */
+footer#footer > div,
+footer.advanced-footer > div {
+  padding-top: 2rem !important;
+  padding-bottom: 1rem !important;
+  gap: 1.25rem !important;
+}
+
+@media (min-width: 768px) {
+  footer#footer > div,
+  footer.advanced-footer > div {
+    padding-top: 2.25rem !important;
+    padding-bottom: 1.125rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer#footer > div,
+  footer.advanced-footer > div {
+    padding-top: 2.5rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+}
+
 /* Keep Lucide navbar icons square — never stretch with logo rules */
 header nav a svg,
 header a[href^="http"] svg {
@@ -563,11 +877,146 @@ header a[href^="http"] svg {
   flex-shrink: 0;
 }
 
-/* Dark mode: mute Mintlify floating ask-bar grip (bright white circle at bottom-left) */
-.dark div.fixed[class*="z-999"] [class*="FFFFFF33"],
-.dark div.fixed[class*="z-999"] [class*="FFFFFF3"] {
-  background-color: rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12) !important;
+/* Navbar links: keep icon + label vertically centered */
+header a[href*="github.com"],
+header a[href*="npmjs.com"],
+header a[href*="ragsuite.de"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+}
+
+/*
+  Search pill: match Website/GitHub/npm outline + hover wash.
+  Do not touch Get Started (filled CTA).
+*/
+header button[aria-label="Open search"],
+header button.group\/search {
+  background-color: transparent !important;
+  border: 1px solid rgb(3 7 18 / 0.1) !important;
+  box-shadow: none !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-ring-offset-shadow: 0 0 #0000 !important;
+}
+
+header button[aria-label="Open search"]:hover,
+header button.group\/search:hover {
+  background-color: rgb(3 7 18 / 0.03) !important;
+  border-color: rgb(3 7 18 / 0.1) !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.dark header button[aria-label="Open search"],
+.dark header button.group\/search {
+  border-color: rgb(255 255 255 / 0.1) !important;
+  background-color: transparent !important;
+  filter: none !important;
+}
+
+.dark header button[aria-label="Open search"]:hover,
+.dark header button.group\/search:hover {
+  background-color: rgb(255 255 255 / 0.03) !important;
+  border-color: rgb(255 255 255 / 0.1) !important;
+  filter: none !important;
+}
+
+/*
+  Swap Lucide "package" on the npm link for the official npm brand mark.
+  Red square stays brand-correct in both light and dark.
+*/
+header a[href*="npmjs.com"] svg {
+  background: url("/_static/npm-icon.svg") center / contain no-repeat !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  border-radius: 0.15rem;
+  color: transparent !important;
+}
+
+/*
+  Hide Mintlify Assistant UI (floating Ask bar + header Ask Assistant).
+  Prefer also turning Assistant off in Mintlify Dashboard → Assistant.
+  Keep Search (⌘K) visible.
+*/
+.chat-assistant-floating-input,
+.chat-assistant-input,
+.chat-assistant-sheet,
+#chat-assistant-sheet,
+div.sticky:has(.chat-assistant-sheet),
+div.sticky.bottom-0:has(.chat-assistant-floating-input),
+div.sticky.bottom-0:has(.chat-assistant-input),
+form:has(input.chat-assistant-input),
+form:has(input[placeholder*="Ask a question"]),
+div.fixed[class*="z-999"]:has(.chat-assistant-input),
+div.fixed[class*="z-999"]:has([placeholder*="Ask a question"]) {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  width: 0 !important;
+  max-width: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header button[aria-label*="assistant" i],
+header button[aria-label="Toggle assistant panel"],
+header a[aria-label*="assistant" i],
+[role="dialog"] button.group\/ai,
+button.group\/ai,
+/* In-dialog Ask Assistant chip next to search input */
+[role="dialog"]:has(#search-input) #search-input ~ button,
+[role="dialog"]:has(#search-input) button.shrink-0.self-stretch,
+/* Code-block Ask Assistant sparkle — keep Copy only */
+button[aria-label="Ask Assistant"],
+button.group\/ask-assistant-button,
+[class*="group/ask-assistant-button"] {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* Drop space Mintlify reserves for the floating ask bar */
+#content-area,
+#content-container,
+main#content-container,
+body {
+  padding-bottom: 0 !important;
+}
+
+/*
+  Search dialog: one outer edge only.
+  Flatten nested search chrome so the dialog border is the only outline.
+*/
+[role="dialog"]:has(#search-input) {
+  border: 1px solid rgb(229 231 235) !important; /* gray-200 */
+  box-shadow:
+    rgba(0, 0, 0, 0.01) 0px 57px 34px 0px,
+    rgba(0, 0, 0, 0.02) 0px 25px 25px 0px,
+    rgba(0, 0, 0, 0.02) 0px 6px 14px 0px !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-ring-offset-shadow: 0 0 #0000 !important;
+  overflow: hidden !important;
+}
+
+.dark [role="dialog"]:has(#search-input) {
+  border-color: rgb(255 255 255 / 0.1) !important;
+}
+
+/* Remove inset padding + nested rounded border that read as a second ring */
+[role="dialog"]:has(#search-input) > div:first-child {
+  padding: 0 !important;
+}
+
+[role="dialog"]:has(#search-input) div.rounded-2xl.border {
+  border: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
 }
 
 /* Stronger link contrast */
@@ -576,26 +1025,112 @@ header a[href^="http"] svg {
   color: #d5e0da !important;
 }
 
+.dark nav[aria-label="Pages"] a[aria-current="page"],
+.dark nav[aria-label="Pages"] a[data-active="true"],
+.dark #sidebar-content a[aria-current="page"],
+.dark #sidebar-content a[data-active="true"] {
+  color: #ffffff !important;
+  background: color-mix(in srgb, #ffffff 10%, transparent) !important;
+  border-left-color: #2D8F6F !important;
+}
+
+.dark nav[aria-label="Pages"] a:hover:not([aria-current="page"]):not([data-active="true"]),
+.dark #sidebar-content a:hover:not([aria-current="page"]):not([data-active="true"]) {
+  color: #ffffff !important;
+  background: color-mix(in srgb, #ffffff 6%, transparent) !important;
+}
+
 .dark nav[aria-label="Pages"] h3,
 .dark #sidebar-content h3 {
   color: #ffffff !important;
-  font-size: 0.95rem !important;
 }
 
-/* Hide sidebar link icons for Claude-like text navigation */
+/* Parent group headers — larger than child links; icon vertically centered */
+nav[aria-label="Pages"] .sidebar-group-header,
+nav[aria-label="Pages"] .sidebar-group-header h3,
+#sidebar-content .sidebar-group-header,
+#sidebar-content .sidebar-group-header h3 {
+  display: flex !important;
+  align-items: center !important;
+  font-size: 1.0625rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.015em;
+  text-transform: none !important;
+  line-height: 1.3 !important;
+}
+
+nav[aria-label="Pages"] .sidebar-group-header,
+#sidebar-content .sidebar-group-header {
+  column-gap: 0.625rem !important;
+}
+
+nav[aria-label="Pages"] .sidebar-group-header h3,
+#sidebar-content .sidebar-group-header h3 {
+  margin: 0 !important;
+}
+
+/* Sidebar Lucide icons — fixed square, flex-centered, never stretch */
 nav[aria-label="Pages"] a svg,
 #sidebar-content a svg {
-  display: none !important;
-  visibility: hidden !important;
-  width: 0 !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  display: block !important;
+  visibility: visible !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  min-width: 1rem !important;
+  max-width: 1rem !important;
+  flex-shrink: 0 !important;
+  align-self: center !important;
+  opacity: 0.72;
 }
 
-nav[aria-label="Pages"] button[aria-expanded] {
-  font-size: 0.82rem !important;
+/* Parent module icons — match larger header type */
+nav[aria-label="Pages"] .sidebar-group-header svg,
+#sidebar-content .sidebar-group-header svg {
+  display: block !important;
+  visibility: visible !important;
+  width: 1.125rem !important;
+  height: 1.125rem !important;
+  min-width: 1.125rem !important;
+  max-width: 1.125rem !important;
+  flex-shrink: 0 !important;
+  align-self: center !important;
+  opacity: 0.72;
+}
+
+nav[aria-label="Pages"] a:hover svg,
+#sidebar-content a:hover svg,
+nav[aria-label="Pages"] a[aria-current="page"] svg,
+nav[aria-label="Pages"] a[data-active="true"] svg,
+#sidebar-content a[aria-current="page"] svg,
+#sidebar-content a[data-active="true"] svg {
+  opacity: 1;
+}
+
+.dark nav[aria-label="Pages"] a svg,
+.dark #sidebar-content a svg,
+.dark nav[aria-label="Pages"] .sidebar-group-header svg,
+.dark #sidebar-content .sidebar-group-header svg {
+  opacity: 0.8;
+}
+
+.dark nav[aria-label="Pages"] a:hover svg,
+.dark #sidebar-content a:hover svg,
+.dark nav[aria-label="Pages"] a[aria-current="page"] svg,
+.dark nav[aria-label="Pages"] a[data-active="true"] svg,
+.dark #sidebar-content a[aria-current="page"] svg,
+.dark #sidebar-content a[data-active="true"] svg {
+  opacity: 1;
+}
+
+/* Nested accordion triggers only — do not shrink top-level group titles */
+nav[aria-label="Pages"] button[aria-expanded]:not(.sidebar-group-header):not(.sidebar-group-header *) {
+  font-size: 0.925rem !important;
   margin-top: 0.65rem !important;
+}
+
+nav[aria-label="Pages"] .sidebar-group-header button[aria-expanded],
+#sidebar-content .sidebar-group-header button[aria-expanded] {
+  font-size: 1.0625rem !important;
 }
 
 .dark nav[aria-label="Pages"] button[aria-expanded] {
@@ -603,8 +1138,8 @@ nav[aria-label="Pages"] button[aria-expanded] {
 }
 
 /* ---- Page Next/Previous pagination (not full-bleed) ---- */
+/* Do not target #pagination — Mintlify also puts that ID on a 0×0 dummy. */
 
-#pagination,
 nav[aria-label="Pagination"] {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -614,10 +1149,10 @@ nav[aria-label="Pagination"] {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  margin-bottom: 2.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
-#pagination > a,
-#pagination > * > a,
 nav[aria-label="Pagination"] a {
   flex: 0 1 auto !important;
   width: auto !important;
@@ -626,14 +1161,12 @@ nav[aria-label="Pagination"] a {
   box-sizing: border-box;
 }
 
-#pagination a:only-child,
 nav[aria-label="Pagination"] a:only-child {
   max-width: 18rem !important;
   margin-left: auto !important;
 }
 
-nav[aria-label="Pagination"] a[href*="Previous"],
-#pagination a:first-child:not(:only-child) {
+nav[aria-label="Pagination"] a:first-child:not(:only-child) {
   margin-right: auto;
 }
 
@@ -679,7 +1212,23 @@ nav[aria-label="Pagination"] a[href*="Previous"],
 
 /* Prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .rg-cta-actions a {
+  .rg-cta-actions a,
+  nav[aria-label="Pages"] a,
+  #sidebar-content a {
     transition: none;
+  }
+
+  header,
+  header#navbar,
+  #navbar {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-color: rgba(244, 241, 234, 0.96) !important;
+  }
+
+  .dark header,
+  .dark header#navbar,
+  .dark #navbar {
+    background-color: rgba(18, 26, 23, 0.96) !important;
   }
 }

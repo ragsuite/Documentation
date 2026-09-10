@@ -1,6 +1,8 @@
 ---
+title: "Architecture"
 description: "High-level RAGSuite architecture — FastAPI, Expo, Postgres, Redis, ChromaDB."
 sidebarTitle: "Architecture"
+icon: "boxes"
 ---
 
 RAGSuite Community Edition is a self-hosted RAG platform:

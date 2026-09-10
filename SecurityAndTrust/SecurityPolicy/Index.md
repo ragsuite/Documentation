@@ -1,6 +1,8 @@
 ---
+title: "Security policy"
 description: "How to report RAGSuite security vulnerabilities — private disclosure to sales@ragsuite.de."
 sidebarTitle: "Security policy"
+icon: "shield-check"
 ---
 
 This summary follows the Community Edition [SECURITY.md](https://github.com/ragsuite/RAGSuite/blob/main/SECURITY.md).
@@ -12,7 +14,7 @@ This summary follows the Community Edition [SECURITY.md](https://github.com/rags
 | `1.0.x` (current Platform / CLI) | Yes |
 | Older pre-`1.0.0` cuts | Best effort only |
 
-Enterprise Edition source, signed offline keys, and the License Server are **private**. Do not open public issues about private Enterprise or License Server internals.
+Enterprise Edition source and signed offline keys are **private**. Do not open public issues about private Enterprise internals.
 
 ## Reporting a vulnerability
 

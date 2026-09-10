@@ -2,11 +2,11 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "RAGSuite",
   "theme": "luma",
-  "description": "Official documentation for RAGSuite \u2014 the sovereign, self-hosted enterprise AI platform by NITSAN.",
+  "description": "Official documentation for RAGSuite — the sovereign, self-hosted enterprise AI platform by NITSAN.",
   "colors": {
-    "primary": "#2563EB",
-    "light": "#3B82F6",
-    "dark": "#1D4ED8"
+    "primary": "#0B3D2E",
+    "light": "#2D8F6F",
+    "dark": "#06261C"
   },
   "favicon": "/_static/favicon.svg",
   "logo": {
@@ -17,6 +17,16 @@
   "appearance": {
     "default": "system",
     "strict": false
+  },
+  "fonts": {
+    "family": "Hanken Grotesk",
+    "heading": {
+      "family": "Fraunces",
+      "weight": 550
+    },
+    "body": {
+      "family": "Hanken Grotesk"
+    }
   },
   "icons": {
     "library": "lucide"
@@ -31,299 +41,124 @@
   "navbar": {
     "links": [
       {
-        "label": "GitHub",
-        "href": "https://github.com/ragsuite/RAGSuite"
+        "label": "Website",
+        "href": "https://www.ragsuite.de",
+        "icon": "globe"
       },
       {
-        "href": "mailto:info@ragsuite.de",
-        "label": "Support"
+        "label": "GitHub",
+        "href": "https://github.com/ragsuite/RAGSuite",
+        "icon": "github"
+      },
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/@ragsuite/ragsuite",
+        "icon": "package"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Book a Demo",
-      "href": "https://ragsuite.de/contact/"
+      "label": "Get Started",
+      "href": "/GettingStarted/QuickStart/Index"
     }
   },
   "navigation": {
     "pages": [
+      "index",
       {
-        "group": "Console",
-        "pages": [
-          "Console/Index",
-          {
-            "group": "AIChatbot",
-            "pages": [
-              "Console/AIChatbot/Index"
-            ]
-          },
-          {
-            "group": "AISearch",
-            "pages": [
-              "Console/AISearch/Index"
-            ]
-          },
-          {
-            "group": "Authentication",
-            "pages": [
-              "Console/Authentication/Index"
-            ]
-          },
-          {
-            "group": "CitationsAndFeedback",
-            "pages": [
-              "Console/CitationsAndFeedback/Index"
-            ]
-          },
-          {
-            "group": "Projects",
-            "pages": [
-              "Console/Projects/Index"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Enterprise",
-        "pages": [
-          "Enterprise/Index",
-          {
-            "group": "Activation",
-            "pages": [
-              "Enterprise/Activation/Index"
-            ]
-          },
-          {
-            "group": "Analytics",
-            "pages": [
-              "Enterprise/Analytics/Index"
-            ]
-          },
-          {
-            "group": "AuditAndCompliance",
-            "pages": [
-              "Enterprise/AuditAndCompliance/Index"
-            ]
-          },
-          {
-            "group": "CompareModels",
-            "pages": [
-              "Enterprise/CompareModels/Index"
-            ]
-          },
-          {
-            "group": "Mobile",
-            "pages": [
-              "Enterprise/Mobile/Index"
-            ]
-          },
-          {
-            "group": "OrganizationAndRBAC",
-            "pages": [
-              "Enterprise/OrganizationAndRBAC/Index"
-            ]
-          },
-          {
-            "group": "QueryTracing",
-            "pages": [
-              "Enterprise/QueryTracing/Index"
-            ]
-          },
-          {
-            "group": "SSO",
-            "pages": [
-              "Enterprise/SSO/Index"
-            ]
-          },
-          {
-            "group": "Voice",
-            "pages": [
-              "Enterprise/Voice/Index"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "GettingStarted",
+        "group": "Getting Started",
+        "icon": "rocket",
         "pages": [
           "GettingStarted/Index",
-          {
-            "group": "CommunityVsEnterprise",
-            "pages": [
-              "GettingStarted/CommunityVsEnterprise/Index"
-            ]
-          },
-          {
-            "group": "Configuration",
-            "pages": [
-              "GettingStarted/Configuration/Index"
-            ]
-          },
-          {
-            "group": "DockerDeploy",
-            "pages": [
-              "GettingStarted/DockerDeploy/Index"
-            ]
-          },
-          {
-            "group": "Doctor",
-            "pages": [
-              "GettingStarted/Doctor/Index"
-            ]
-          },
-          {
-            "group": "InstallCLI",
-            "pages": [
-              "GettingStarted/InstallCLI/Index"
-            ]
-          },
-          {
-            "group": "PortsAndPrerequisites",
-            "pages": [
-              "GettingStarted/PortsAndPrerequisites/Index"
-            ]
-          },
-          {
-            "group": "QuickStart",
-            "pages": [
-              "GettingStarted/QuickStart/Index"
-            ]
-          },
-          {
-            "group": "WhatIsRAGSuite",
-            "pages": [
-              "GettingStarted/WhatIsRAGSuite/Index"
-            ]
-          }
+          "GettingStarted/WhatIsRAGSuite/Index",
+          "GettingStarted/CommunityVsEnterprise/Index",
+          "GettingStarted/PortsAndPrerequisites/Index",
+          "GettingStarted/InstallCLI/Index",
+          "GettingStarted/QuickStart/Index",
+          "GettingStarted/Configuration/Index",
+          "GettingStarted/DockerDeploy/Index",
+          "GettingStarted/Doctor/Index"
+        ]
+      },
+      {
+        "group": "Console",
+        "icon": "monitor",
+        "pages": [
+          "Console/Index",
+          "Console/AISearch/Index",
+          "Console/AIChatbot/Index",
+          "Console/CitationsAndFeedback/Index",
+          "Console/Projects/Index",
+          "Console/Authentication/Index"
+        ]
+      },
+      {
+        "group": "Sources & Connectors",
+        "icon": "plug",
+        "pages": [
+          "SourcesAndConnectors/Index",
+          "SourcesAndConnectors/Documents/Index",
+          "SourcesAndConnectors/Crawl/Index",
+          "SourcesAndConnectors/ConnectorsAndMCP/Index",
+          "SourcesAndConnectors/Widgets/Index",
+          "SourcesAndConnectors/N8n/Index"
         ]
       },
       {
         "group": "Models",
+        "icon": "brain",
         "pages": [
           "Models/Index",
-          {
-            "group": "BringYourOwnKeys",
-            "pages": [
-              "Models/BringYourOwnKeys/Index"
-            ]
-          },
-          {
-            "group": "OllamaAndAirGapped",
-            "pages": [
-              "Models/OllamaAndAirGapped/Index"
-            ]
-          },
-          {
-            "group": "Providers",
-            "pages": [
-              "Models/Providers/Index"
-            ]
-          }
+          "Models/Providers/Index",
+          "Models/BringYourOwnKeys/Index",
+          "Models/OllamaAndAirGapped/Index"
         ]
       },
       {
         "group": "Platform",
+        "icon": "layers",
         "pages": [
           "Platform/Index",
-          {
-            "group": "APIKeysAndWebhooks",
-            "pages": [
-              "Platform/APIKeysAndWebhooks/Index"
-            ]
-          },
-          {
-            "group": "Architecture",
-            "pages": [
-              "Platform/Architecture/Index"
-            ]
-          },
-          {
-            "group": "RESTAPI",
-            "pages": [
-              "Platform/RESTAPI/Index"
-            ]
-          }
+          "Platform/Architecture/Index",
+          "Platform/RESTAPI/Index",
+          "Platform/APIKeysAndWebhooks/Index"
         ]
       },
       {
-        "group": "SecurityAndTrust",
+        "group": "Enterprise",
+        "icon": "building-2",
+        "pages": [
+          "Enterprise/Index",
+          "Enterprise/Activation/Index",
+          "Enterprise/OrganizationAndRBAC/Index",
+          "Enterprise/SSO/Index",
+          "Enterprise/Analytics/Index",
+          "Enterprise/QueryTracing/Index",
+          "Enterprise/AuditAndCompliance/Index",
+          "Enterprise/CompareModels/Index",
+          "Enterprise/Voice/Index",
+          "Enterprise/Mobile/Index"
+        ]
+      },
+      {
+        "group": "Security & Trust",
+        "icon": "shield",
         "pages": [
           "SecurityAndTrust/Index",
-          {
-            "group": "License",
-            "pages": [
-              "SecurityAndTrust/License/Index"
-            ]
-          },
-          {
-            "group": "SecurityPolicy",
-            "pages": [
-              "SecurityAndTrust/SecurityPolicy/Index"
-            ]
-          },
-          {
-            "group": "Sovereignty",
-            "pages": [
-              "SecurityAndTrust/Sovereignty/Index"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "SourcesAndConnectors",
-        "pages": [
-          "SourcesAndConnectors/Index",
-          {
-            "group": "ConnectorsAndMCP",
-            "pages": [
-              "SourcesAndConnectors/ConnectorsAndMCP/Index"
-            ]
-          },
-          {
-            "group": "Crawl",
-            "pages": [
-              "SourcesAndConnectors/Crawl/Index"
-            ]
-          },
-          {
-            "group": "Documents",
-            "pages": [
-              "SourcesAndConnectors/Documents/Index"
-            ]
-          },
-          {
-            "group": "N8n",
-            "pages": [
-              "SourcesAndConnectors/N8n/Index"
-            ]
-          },
-          {
-            "group": "Widgets",
-            "pages": [
-              "SourcesAndConnectors/Widgets/Index"
-            ]
-          }
+          "SecurityAndTrust/Sovereignty/Index",
+          "SecurityAndTrust/SecurityPolicy/Index",
+          "SecurityAndTrust/License/Index"
         ]
       },
       {
         "group": "Support",
+        "icon": "life-buoy",
         "pages": [
           "Support/Index",
-          {
-            "group": "Contact",
-            "pages": [
-              "Support/Contact/Index"
-            ]
-          },
-          {
-            "group": "HelpfulLinks",
-            "pages": [
-              "Support/HelpfulLinks/Index"
-            ]
-          }
+          "Support/Contact/Index",
+          "Support/HelpfulLinks/Index"
         ]
-      },
-      "index"
+      }
     ]
   },
   "footer": {

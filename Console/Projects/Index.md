@@ -1,6 +1,8 @@
 ---
+title: "Projects"
 description: "Organize RAGSuite knowledge and workflows into projects — unlimited on Community."
 sidebarTitle: "Projects"
+icon: "folder"
 ---
 
 **Edition:** Community

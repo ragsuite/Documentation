@@ -1,6 +1,8 @@
 ---
+title: "Ports & prereqs"
 description: "Ports and tool versions for RAGSuite native and Docker installs."
 sidebarTitle: "Ports & prereqs"
+icon: "network"
 ---
 
 Requirements match the official Platform Manager CLI ([`@ragsuite/ragsuite`](https://www.npmjs.com/package/@ragsuite/ragsuite)).
@@ -16,6 +18,10 @@ Requirements match the official Platform Manager CLI ([`@ragsuite/ragsuite`](htt
 | Chroma | **8004** | internal |
 
 OpenAPI when the API is up: http://localhost:9090/docs
+
+<Warning>
+If another service already binds **9090**, **9191**, **5436**, **6382**, or **8004**, `ragsuite start` and `ragsuite doctor` will fail until you free those ports or change the conflicting service. Do not guess alternate ports unless you also update `.env` consistently.
+</Warning>
 
 ## Shared (CLI)
 

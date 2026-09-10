@@ -1,6 +1,8 @@
 ---
+title: "Org & RBAC"
 description: "Enterprise organization RBAC — teams, orgs, members, and project access control."
 sidebarTitle: "Org & RBAC"
+icon: "users"
 ---
 
 **Edition:** Enterprise

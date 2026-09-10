@@ -1,6 +1,8 @@
 ---
+title: "BYO keys"
 description: "Use your own LLM API keys with RAGSuite — data does not train someone else’s model under product design."
 sidebarTitle: "BYO keys"
+icon: "key"
 ---
 
 **Edition:** Community

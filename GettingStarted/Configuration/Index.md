@@ -1,9 +1,15 @@
 ---
+title: "Configuration"
 description: "Configure RAGSuite secrets, SMTP, and URLs in .env for CLI or clone installs."
 sidebarTitle: "Configuration"
+icon: "settings"
 ---
 
 Set secrets once, then restart the stack. **Never commit `.env`.**
+
+<Warning>
+Treat `.env` as production secrets. Rotate `JWT_SECRET_KEY` after any shared or compromised install. Smoke SMTP created by `init` may let the API start but **does not** deliver real invite, password-reset, or 2FA email until you configure real SMTP.
+</Warning>
 
 ## Where the file lives
 

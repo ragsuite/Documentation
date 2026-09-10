@@ -1,6 +1,8 @@
 ---
+title: "Analytics"
 description: "RAGSuite analytics — Community overview with advanced analytics in Enterprise."
 sidebarTitle: "Analytics"
+icon: "chart-bar"
 ---
 
 **Edition:** Enterprise for advanced analytics (Community keeps overview surfaces)
