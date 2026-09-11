@@ -52,4 +52,4 @@ Published site: [docs.ragsuite.de](https://docs.ragsuite.de).
 
 ## License
 
-Documentation © NITSAN / RAGSuite. Community Edition software is Apache License 2.0 — see the product [NOTICE](https://github.com/ragsuite/RAGSuite/blob/main/NOTICE).
+Documentation [© NITSAN / RAGSuite](SecurityAndTrust/License/Index.md). Community Edition software is Apache License 2.0 — see the product [NOTICE](https://github.com/ragsuite/RAGSuite/blob/main/NOTICE).
