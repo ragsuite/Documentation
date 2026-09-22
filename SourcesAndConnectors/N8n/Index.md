@@ -16,3 +16,17 @@ n8n integration is part of the Community connectors ecosystem and is explicitly 
 - Do not treat Beta connectors as covered by Enterprise SLA language unless your contract says otherwise.
 
 For stable ingestion paths today, prefer crawl, document upload, Gmail, and MCP as documented in [Connectors & MCP](/SourcesAndConnectors/ConnectorsAndMCP/Index).
+
+## Interactive tour
+
+<Frame>
+  <div className="rg-supademo">
+    <iframe
+      src="https://app.supademo.com/embed/cmucazwoi0pc5qm06zh1jpbsu"
+      title="RAGSuite API keys and n8n integration — interactive demo"
+      loading="lazy"
+      allow="clipboard-write"
+      allowFullScreen
+    />
+  </div>
+</Frame>

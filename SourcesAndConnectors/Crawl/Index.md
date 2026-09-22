@@ -21,3 +21,17 @@ Product positioning on [ragsuite.de](https://www.ragsuite.de) describes crawl wi
 
 - [Documents (upload)](/SourcesAndConnectors/Documents/Index)
 - [AI Search](/Console/AISearch/Index)
+
+## Interactive tour
+
+<Frame>
+  <div className="rg-supademo">
+    <iframe
+      src="https://app.supademo.com/embed/cmu6wojy81gyzqmctl5k8o0ag"
+      title="RAGSuite Sources and URLs — interactive demo"
+      loading="lazy"
+      allow="clipboard-write"
+      allowFullScreen
+    />
+  </div>
+</Frame>

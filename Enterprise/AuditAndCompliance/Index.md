@@ -14,3 +14,17 @@ icon: "clipboard-list"
 Enterprise includes **full audit logs** and **compliance exports** so every answer stays traceable for compliance review — on your infrastructure.
 
 Evidence stays on **your** systems. For Trust Center / due-diligence narratives, see [Sovereignty](/SecurityAndTrust/Sovereignty/Index) and the marketing Trust Center on [ragsuite.de](https://www.ragsuite.de).
+
+## Interactive tour
+
+<Frame>
+  <div className="rg-supademo">
+    <iframe
+      src="https://app.supademo.com/embed/cmuciavbr15fnqm066iy574ik"
+      title="RAGSuite Audit logs and Compliance — interactive demo"
+      loading="lazy"
+      allow="clipboard-write"
+      allowFullScreen
+    />
+  </div>
+</Frame>

@@ -24,3 +24,17 @@ Organization RBAC (teams, orgs, members, and project access) is also Enterprise 
 ## API access
 
 Service integrations typically use API keys (`rgs_live_*` / `rgs_test_*` patterns in the CE auth docs). See [API keys & webhooks](/Platform/APIKeysAndWebhooks/Index).
+
+## Interactive tour
+
+<Frame>
+  <div className="rg-supademo">
+    <iframe
+      src="https://app.supademo.com/embed/cmucit0xr16gcqm06z3l4dpab"
+      title="RAGSuite Profile — interactive demo"
+      loading="lazy"
+      allow="clipboard-write"
+      allowFullScreen
+    />
+  </div>
+</Frame>

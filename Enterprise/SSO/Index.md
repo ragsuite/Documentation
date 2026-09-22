@@ -29,3 +29,17 @@ Community password auth and 2FA remain available without SSO — see [Authentica
 <Info>
 Env flags such as `SSO_ENABLED` exist in CE templates for wiring; **product SSO requires Enterprise** entitlement and configuration. This documentation covers **Google OIDC only**.
 </Info>
+
+## Interactive tour
+
+<Frame>
+  <div className="rg-supademo">
+    <iframe
+      src="https://app.supademo.com/embed/cmucejn4p0w7vqm06u2zdz33v"
+      title="RAGSuite Google SSO — interactive demo"
+      loading="lazy"
+      allow="clipboard-write"
+      allowFullScreen
+    />
+  </div>
+</Frame>

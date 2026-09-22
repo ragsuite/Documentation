@@ -51,3 +51,19 @@ Open `http://localhost:9191` on a local install (or your published console URL).
     Password auth and 2FA; SSO is Enterprise.
   </Card>
 </CardGroup>
+
+## Interactive tour
+
+Monitor console system health metrics and service status.
+
+<Frame>
+  <div className="rg-supademo">
+    <iframe
+      src="https://app.supademo.com/embed/cmuch901g131nqm06u6sut9yd"
+      title="RAGSuite System health — interactive demo"
+      loading="lazy"
+      allow="clipboard-write"
+      allowFullScreen
+    />
+  </div>
+</Frame>

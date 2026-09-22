@@ -44,3 +44,17 @@ Use these pages in due diligence alongside your own network and deployment revie
     Apache 2.0 Community scope and Enterprise NOTICE.
   </Card>
 </CardGroup>
+
+## Interactive tour
+
+<Frame>
+  <div className="rg-supademo">
+    <iframe
+      src="https://app.supademo.com/embed/cmuchreba14inqm06670r4h76"
+      title="RAGSuite Trust Center — interactive demo"
+      loading="lazy"
+      allow="clipboard-write"
+      allowFullScreen
+    />
+  </div>
+</Frame>

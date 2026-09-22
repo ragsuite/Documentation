@@ -1210,6 +1210,30 @@ nav[aria-label="Pagination"] a:first-child:not(:only-child) {
   }
 }
 
+/* Supademo interactive tours — responsive iframe inside Mintlify Frame */
+.rg-supademo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 480px;
+  overflow: hidden;
+  border-radius: var(--rg-radius);
+  background: var(--rg-paper);
+}
+
+.dark .rg-supademo {
+  background: var(--rg-dark-bg-elevated);
+}
+
+.rg-supademo iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--rg-radius);
+}
+
 /* Prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .rg-cta-actions a,

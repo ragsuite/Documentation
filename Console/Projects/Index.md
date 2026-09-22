@@ -16,3 +16,17 @@ Community Edition product terms include **unlimited projects** (and unlimited us
 - Keep high-trust corpora in dedicated projects.
 - Align widget embeds and API keys with the project they should query.
 - Prefer clear naming so audit and support can identify which project produced an answer.
+
+## Interactive tour
+
+<Frame>
+  <div className="rg-supademo">
+    <iframe
+      src="https://app.supademo.com/embed/cmuce2k9c0vsbqm066wenxh04"
+      title="RAGSuite All Projects — interactive demo"
+      loading="lazy"
+      allow="clipboard-write"
+      allowFullScreen
+    />
+  </div>
+</Frame>

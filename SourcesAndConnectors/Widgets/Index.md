@@ -26,6 +26,6 @@ Product embed surfaces in Community include chat/search widget loaders (for exam
 
 ## Related
 
-- [AI Search](/Console/AISearch/Index)
-- [AI Chatbot](/Console/AIChatbot/Index)
+- [AI Search](/Console/AISearch/Index) — interactive tour includes the **Integration script** tab
+- [AI Chatbot](/Console/AIChatbot/Index) — interactive tour includes the **Integration script** tab
 - [API keys & webhooks](/Platform/APIKeysAndWebhooks/Index)

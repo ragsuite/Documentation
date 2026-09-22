@@ -22,3 +22,17 @@ Collect user feedback on answers so quality improves over time. Feedback is part
 - [AI Search](/Console/AISearch/Index)
 - [AI Chatbot](/Console/AIChatbot/Index)
 - [Enterprise analytics](/Enterprise/Analytics/Index)
+
+## Interactive tour
+
+<Frame>
+  <div className="rg-supademo">
+    <iframe
+      src="https://app.supademo.com/embed/cmucbzzvb0qssqm065l0k3455"
+      title="RAGSuite Feedback — interactive demo"
+      loading="lazy"
+      allow="clipboard-write"
+      allowFullScreen
+    />
+  </div>
+</Frame>

@@ -28,3 +28,114 @@ The chatbot widget can be embedded on your sites. See [Widgets & embeds](/Source
 - **Voice** input / VoiceOver on widgets — Enterprise entitlement ([Voice](/Enterprise/Voice/Index))
 - **Compare Models** — score the same query across models ([Compare Models](/Enterprise/CompareModels/Index))
 - **Query tracing** — deeper timing and confidence traces ([Query tracing](/Enterprise/QueryTracing/Index))
+
+## Interactive tour
+
+Chatbot configuration tours (same pattern as [AI Search](/Console/AISearch/Index)).
+
+<Tabs>
+  <Tab title="Overview">
+    <Frame>
+      <div className="rg-supademo">
+        <iframe
+          src="https://app.supademo.com/embed/cmu6vwi1u1f95qmct1gpyvht7"
+          title="AI Chatbot overview and system prompt — interactive demo"
+          loading="lazy"
+          allow="clipboard-write"
+          allowFullScreen
+        />
+      </div>
+    </Frame>
+  </Tab>
+  <Tab title="Status">
+    <Frame>
+      <div className="rg-supademo">
+        <iframe
+          src="https://app.supademo.com/embed/cmuaxath6250mqm4xwh9bmmxr"
+          title="AI Chatbot status — interactive demo"
+          loading="lazy"
+          allow="clipboard-write"
+          allowFullScreen
+        />
+      </div>
+    </Frame>
+  </Tab>
+  <Tab title="Model settings">
+    <Frame>
+      <div className="rg-supademo">
+        <iframe
+          src="https://app.supademo.com/embed/cmu6rmt1216ffqmcttlhskqmh"
+          title="AI Chatbot model settings — interactive demo"
+          loading="lazy"
+          allow="clipboard-write"
+          allowFullScreen
+        />
+      </div>
+    </Frame>
+  </Tab>
+  <Tab title="Config & custom">
+    <Frame>
+      <div className="rg-supademo">
+        <iframe
+          src="https://app.supademo.com/embed/cmuaylr4600pk210jofei7vyz"
+          title="AI Chatbot config and custom — interactive demo"
+          loading="lazy"
+          allow="clipboard-write"
+          allowFullScreen
+        />
+      </div>
+    </Frame>
+  </Tab>
+  <Tab title="DPA">
+    <Frame>
+      <div className="rg-supademo">
+        <iframe
+          src="https://app.supademo.com/embed/cmub3z2u803l81y0jv5tokchw"
+          title="AI Chatbot DPA — interactive demo"
+          loading="lazy"
+          allow="clipboard-write"
+          allowFullScreen
+        />
+      </div>
+    </Frame>
+  </Tab>
+  <Tab title="Feedback, FAQ, privacy">
+    <Frame>
+      <div className="rg-supademo">
+        <iframe
+          src="https://app.supademo.com/embed/cmub42mta03lj1y0jjaub5ymj"
+          title="AI Chatbot feedback, FAQ, and privacy — interactive demo"
+          loading="lazy"
+          allow="clipboard-write"
+          allowFullScreen
+        />
+      </div>
+    </Frame>
+  </Tab>
+  <Tab title="Integration script">
+    <Frame>
+      <div className="rg-supademo">
+        <iframe
+          src="https://app.supademo.com/embed/cmuaxnk6o25c2qm4x4v0ab17x"
+          title="AI Chatbot integration script — interactive demo"
+          loading="lazy"
+          allow="clipboard-write"
+          allowFullScreen
+        />
+      </div>
+    </Frame>
+  </Tab>
+  <Tab title="Test chatbot">
+    <Frame>
+      <div className="rg-supademo">
+        <iframe
+          src="https://app.supademo.com/embed/cmubbjpha2ynfqm4xdijsj5xh"
+          title="Test AI Chatbot — interactive demo"
+          loading="lazy"
+          allow="clipboard-write"
+          allowFullScreen
+        />
+      </div>
+    </Frame>
+  </Tab>
+</Tabs>
