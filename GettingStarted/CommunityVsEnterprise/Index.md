@@ -38,11 +38,11 @@ Requires a vendor-issued **offline key** and **Enterprise bundle**.
 | Area | Notes |
 |------|--------|
 | SSO | Google OIDC single sign-on |
-| Org RBAC | Teams, orgs, members, and project access control |
+| Org RBAC | Teams, orgs, members, and project access control (organization Team Members — not the Microsoft Teams Sources connector) |
 | Compare Models | Side-by-side model scoring on your infrastructure |
 | Query tracing | Deep query tracing for compliance and quality review |
 | Analytics | Advanced analytics |
-| Audit & compliance | Full audit logs and compliance exports |
+| Audit & compliance | Full audit logs, compliance exports, and **configurable audit retention** (Settings › Data Retention) |
 | Voice | Entitlement-gated STT/TTS on widgets |
 | Mobile app | **Beta** |
 | Services | White-label, SLA, CSM — by agreement |
