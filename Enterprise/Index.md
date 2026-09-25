@@ -1,6 +1,6 @@
 ---
 title: "Enterprise overview"
-description: "RAGSuite Enterprise — SSO, RBAC, Compare Models, audit, analytics, voice, mobile Beta."
+description: "RAGSuite Enterprise — SSO, RBAC, Compare Models, audit, analytics, Voice, AI Voice Pilot, mobile Beta."
 sidebarTitle: "Enterprise overview"
 icon: "building-2"
 ---
@@ -60,8 +60,11 @@ Commercial overview: [Pricing comparison](https://www.ragsuite.de/pricing/#compa
   <Card title="Audit & compliance" icon="clipboard-list" href="/Enterprise/AuditAndCompliance/Index">
     Evidence who asked what — on your infrastructure.
   </Card>
-  <Card title="Voice" icon="mic" href="/Enterprise/Voice/Index">
-    Voice input workflows for entitled deployments.
+  <Card title="Voice (widgets)" icon="mic" href="/Enterprise/Voice/Index">
+    Browser STT/TTS mic and speaker on Chatbot and Search widgets.
+  </Card>
+  <Card title="AI Voice Pilot" icon="audio-lines" href="/Enterprise/AIVoicePilot/Index">
+    Speak to your knowledge base and hear spoken answers.
   </Card>
   <Card title="Mobile (Beta)" icon="smartphone" href="/Enterprise/Mobile/Index">
     Citation-backed answers on mobile — Beta.

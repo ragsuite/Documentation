@@ -21,6 +21,7 @@ Commercial comparison: [ragsuite.de/pricing](https://www.ragsuite.de/pricing/#co
 ## Community Edition — €0 · Apache 2.0
 
 - Full pipeline: crawl, upload, chat (**AI Chatbot**), search (**AI Search**), widgets  
+- **Admin Assistant** — in-console operator assistant (not the embeddable chatbot)  
 - Connectors & MCP (Gmail, MCP, Marketplace); **n8n is Beta**  
 - Curated LLM providers (**OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**, **Custom LLM / Ollama**)  
 - REST API, API keys, webhooks  
@@ -43,7 +44,8 @@ Requires a vendor-issued **offline key** and **Enterprise bundle**.
 | Query tracing | Deep query tracing for compliance and quality review |
 | Analytics | Advanced analytics |
 | Audit & compliance | Full audit logs, compliance exports, and **configurable audit retention** (Settings › Data Retention) |
-| Voice | Entitlement-gated STT/TTS on widgets |
+| Voice (widgets) | Entitlement-gated STT/TTS on Chatbot and Search widgets |
+| AI Voice Pilot | Speak to the knowledge base and hear spoken answers (ElevenLabs); distinct from widget Voice |
 | Mobile app | **Beta** |
 | Services | White-label, SLA, CSM — by agreement |
 

@@ -40,11 +40,13 @@ Use `Steps`, `Tabs`, `Tip`/`Warning`, `CardGroup`, and `.rg-landing-*` / `.rg-ct
 
 ## Product names
 
-- **AI Search** + **AI Chatbot** (never “AI Assistant”)
+- **AI Search** + **AI Chatbot** + **Admin Assistant** (never product name “AI Assistant”)
+- **Voice (widgets)** ≠ **AI Voice Pilot** (both EE; document separately)
 
 ## CE (document as available)
 
 Full pipeline: crawl, upload, chat (AI Chatbot), search (AI Search), widgets.
+**Admin Assistant** (in-console operator assistant — not the embeddable chatbot).
 Connectors & MCP (Gmail, MCP, Marketplace); **n8n = Beta**.
 Curated LLM providers only: **OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**,
 **Custom LLM / Ollama** (with curated chat/embedding IDs — see Models/Providers).
@@ -61,7 +63,8 @@ REST API, API keys, webhooks plumbing; Docker / native deploy.
 - Compare Models
 - Query tracing
 - Analytics (advanced in EE)
-- Voice (entitlement-gated)
+- Voice (widgets) — entitlement-gated STT/TTS on Chatbot and Search widgets
+- AI Voice Pilot — speak-and-hear RAG (ElevenLabs); distinct from widget Voice
 - Mobile app = **Beta**
 - White-label / SLA / CSM = by-agreement services
 
@@ -73,7 +76,7 @@ REST API, API keys, webhooks plumbing; Docker / native deploy.
 - Public self-serve license portal
 - Admin UI as “React SPA” without Expo
 - Telemetry / phone-home (product claim is no telemetry)
-- “AI Assistant” as a product name
+- “AI Assistant” as a customer-facing product name (use **Admin Assistant**)
 
 ## Support contacts
 

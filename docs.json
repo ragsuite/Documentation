@@ -87,6 +87,7 @@
           "Console/Index",
           "Console/AISearch/Index",
           "Console/AIChatbot/Index",
+          "Console/AdminAssistant/Index",
           "Console/CitationsAndFeedback/Index",
           "Console/Projects/Index",
           "Console/Authentication/Index"
@@ -137,6 +138,7 @@
           "Enterprise/AuditAndCompliance/Index",
           "Enterprise/CompareModels/Index",
           "Enterprise/Voice/Index",
+          "Enterprise/AIVoicePilot/Index",
           "Enterprise/Mobile/Index"
         ]
       },

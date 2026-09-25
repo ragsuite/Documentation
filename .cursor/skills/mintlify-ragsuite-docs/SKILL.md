@@ -26,8 +26,9 @@ Do not modify CE/EE application repos unless the user explicitly asks.
 
 ## Product naming
 
-- **AI Search** and **AI Chatbot** (never “AI Assistant”).
-- Paths: `Console/AISearch/`, `Console/AIChatbot/`.
+- **AI Search**, **AI Chatbot**, and **Admin Assistant** (never product name “AI Assistant”).
+- **Voice (widgets)** and **AI Voice Pilot** are different Enterprise modules — do not conflate them.
+- Paths: `Console/AISearch/`, `Console/AIChatbot/`, `Console/AdminAssistant/`, `Enterprise/Voice/`, `Enterprise/AIVoicePilot/`.
 - CLI: **`@ragsuite/ragsuite`** → binary **`ragsuite`**. No other package name.
 
 ## CLI truth
@@ -58,7 +59,7 @@ Ports: API **9090**, Web **9191**, Postgres **5436**, Redis **6382**, Chroma **8
 
 - Strong, professional, clear to non-experts.
 - Short paragraphs; direct imperatives for procedures.
-- No fluff; no “AI Assistant”; no Partial SSO/RBAC language.
+- No fluff; no product name “AI Assistant” (use **Admin Assistant**); no Partial SSO/RBAC language.
 
 ## Local preview
 

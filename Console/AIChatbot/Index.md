@@ -9,6 +9,8 @@ icon: "message-circle"
 
 The AI Chatbot is a streaming chat experience grounded in your own content. Every reply is expected to carry citations so people can verify the passage before they act.
 
+It is **not** [Admin Assistant](/Console/AdminAssistant/Index) (in-console operator help). It is **not** [AI Voice Pilot](/Enterprise/AIVoicePilot/Index) (Enterprise spoken RAG).
+
 ## Principle
 
 > If RAGSuite can’t cite it, it doesn’t claim it.
@@ -25,7 +27,8 @@ The chatbot widget can be embedded on your sites. See [Widgets & embeds](/Source
 
 ## Enterprise add-ons
 
-- **Voice** input / VoiceOver on widgets — Enterprise entitlement ([Voice](/Enterprise/Voice/Index))
+- **Voice** (widget mic / speaker) — Enterprise entitlement ([Voice (widgets)](/Enterprise/Voice/Index))
+- **AI Voice Pilot** — speak-and-hear RAG in the dashboard (and optional Layout 2 chatbot surface) — ([AI Voice Pilot](/Enterprise/AIVoicePilot/Index))
 - **Compare Models** — score the same query across models ([Compare Models](/Enterprise/CompareModels/Index))
 - **Query tracing** — deeper timing and confidence traces ([Query tracing](/Enterprise/QueryTracing/Index))
 

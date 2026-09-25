@@ -60,7 +60,7 @@ ragsuite start
     Apache 2.0 — full pipeline, connectors, models, REST API, unlimited users and projects.
   </Card>
   <Card title="Enterprise" icon="building-2" href="/Enterprise/Index">
-    SSO, org RBAC, Compare Models, audit, analytics, voice, and mobile (Beta).
+    SSO, org RBAC, Compare Models, audit, analytics, Voice, AI Voice Pilot, and mobile (Beta).
   </Card>
   <Card title="Security & Trust" icon="shield" href="/SecurityAndTrust/Index">
     Self-hosted, no telemetry, inspectable source, citations you can verify.

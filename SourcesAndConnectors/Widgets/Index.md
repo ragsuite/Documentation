@@ -21,7 +21,8 @@ Product embed surfaces in Community include chat/search widget loaders (for exam
 
 ## Enterprise widget features
 
-- **Voice** mic/speaker on chatbot and search widgets — Enterprise entitlement ([Voice](/Enterprise/Voice/Index))
+- **Voice** mic/speaker on chatbot and search widgets — Enterprise entitlement ([Voice (widgets)](/Enterprise/Voice/Index))
+- **AI Voice Pilot** on chatbot **Layout 2** (Home CTA and footer tab) when Enterprise entitlements allow it — ([AI Voice Pilot](/Enterprise/AIVoicePilot/Index))
 - White-label / custom widget domain — **by agreement** (services), not a free CE module
 
 ## Related
