@@ -15,7 +15,7 @@ RAGSuite is a **sovereign enterprise AI platform**: self-hosted or air-gapped RA
 ## What you get
 
 1. **Bring in content** — crawl websites and upload PDF, DOCX, TXT.  
-2. **Connect sources** — Gmail, open MCP server & client, n8n (**Beta**).  
+2. **Connect sources** — inbound [Connectors](/SourcesAndConnectors/Connectors/Index) (Gmail, Drive, Slack, Teams, …); outbound [MCP](/SourcesAndConnectors/MCP/Index) for AI apps; n8n (**Beta**).  
 3. **Publish where people work** — embed **AI Search** and **AI Chatbot** widgets with streaming, citation-backed answers.  
 4. **Operate in the console** — use **Admin Assistant** for operator help on project history, metrics, crawl health, and configuration (separate from AI Chatbot).  
 5. **Improve over time** — feedback, analytics (advanced features in Enterprise), and auditability.  

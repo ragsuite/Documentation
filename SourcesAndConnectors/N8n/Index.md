@@ -15,7 +15,7 @@ n8n integration is part of the Community connectors ecosystem and is explicitly 
 - Expect changes in setup, APIs, or UI before a non-Beta designation.
 - Do not treat Beta connectors as covered by Enterprise SLA language unless your contract says otherwise.
 
-For stable ingestion paths today, prefer crawl, document upload, Gmail, and MCP as documented in [Connectors & MCP](/SourcesAndConnectors/ConnectorsAndMCP/Index).
+For stable ingestion paths today, prefer crawl, document upload, and [Connectors](/SourcesAndConnectors/Connectors/Index) (Gmail and related Sources sync). To connect AI apps **to** RAGSuite, use [MCP](/SourcesAndConnectors/MCP/Index).
 
 ## Interactive tour
 

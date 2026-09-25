@@ -22,7 +22,9 @@ Commercial comparison: [ragsuite.de/pricing](https://www.ragsuite.de/pricing/#co
 
 - Full pipeline: crawl, upload, chat (**AI Chatbot**), search (**AI Search**), widgets  
 - **Admin Assistant** — in-console operator assistant (not the embeddable chatbot)  
-- Connectors & MCP (Gmail, MCP, Marketplace); **n8n is Beta**  
+- [Connectors](/SourcesAndConnectors/Connectors/Index) (Gmail, Google Drive, Slack, Microsoft Teams, marketplace)  
+- [MCP](/SourcesAndConnectors/MCP/Index) — Management keys so Cursor, Claude, VS Code, and similar hosts call RAGSuite  
+- **n8n** is **Beta**  
 - Curated LLM providers (**OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**, **Custom LLM / Ollama**)  
 - REST API, API keys, webhooks  
 - Citations, feedback, password auth, 2FA & sessions  

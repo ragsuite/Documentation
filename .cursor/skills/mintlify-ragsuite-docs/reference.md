@@ -47,7 +47,8 @@ Use `Steps`, `Tabs`, `Tip`/`Warning`, `CardGroup`, and `.rg-landing-*` / `.rg-ct
 
 Full pipeline: crawl, upload, chat (AI Chatbot), search (AI Search), widgets.
 **Admin Assistant** (in-console operator assistant — not the embeddable chatbot).
-Connectors & MCP (Gmail, MCP, Marketplace); **n8n = Beta**.
+Connectors (Gmail, Google Drive, Slack, Microsoft Teams, Marketplace); **n8n = Beta**.
+**MCP** (Management → MCP keys / host setup) is a separate CE module — not an inbound connector.
 Curated LLM providers only: **OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**,
 **Custom LLM / Ollama** (with curated chat/embedding IDs — see Models/Providers).
 Do not invent Azure OpenAI, Aleph Alpha, IONOS, OVHcloud, vLLM, or other vendors.

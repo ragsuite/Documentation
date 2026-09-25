@@ -38,6 +38,12 @@
   "css": [
     "/custom.css"
   ],
+  "redirects": [
+    {
+      "source": "/SourcesAndConnectors/ConnectorsAndMCP/Index",
+      "destination": "/SourcesAndConnectors/Connectors/Index"
+    }
+  ],
   "navbar": {
     "links": [
       {
@@ -100,7 +106,8 @@
           "SourcesAndConnectors/Index",
           "SourcesAndConnectors/Documents/Index",
           "SourcesAndConnectors/Crawl/Index",
-          "SourcesAndConnectors/ConnectorsAndMCP/Index",
+          "SourcesAndConnectors/Connectors/Index",
+          "SourcesAndConnectors/MCP/Index",
           "SourcesAndConnectors/Widgets/Index",
           "SourcesAndConnectors/N8n/Index"
         ]
