@@ -8,11 +8,11 @@ icon: "boxes"
 RAGSuite Community Edition is a self-hosted RAG platform:
 
 ```text
-Sources (crawl · upload · connectors · MCP)
+Sources (domain crawl · sitemap XML · upload · text · Q&A pairs)
         ↓
 RAGSuite (FastAPI · PostgreSQL · Redis · ChromaDB)
         ↓
-Console + Widgets (AI Search · AI Chatbot)
+Console + Widgets + MCP (AI Search · AI Chatbot · Admin Assistant · AI Voice Pilot · MCP hosts)
         ↓
 LLMs (OpenAI · Anthropic · Mistral · Gemini · or Custom LLM / Ollama locally)
 ```
@@ -32,7 +32,7 @@ LLMs (OpenAI · Anthropic · Mistral · Gemini · or Custom LLM / Ollama locally
 ## Editions
 
 - **Platform spine** — deploy, config, auth protocol, extension loader (edition-agnostic).
-- **Community modules** — practitioner pipeline (chat, search, crawl, documents, widgets, connectors, …).
+- **Community modules** — practitioner pipeline (chat, search, crawl, documents, widgets, MCP, voice, AI Voice Pilot, …).
 - **Enterprise modules** — governance and quality loop features delivered as entitled bundles.
 
 Owner: **NITSAN**. Product site: [ragsuite.de](https://www.ragsuite.de).

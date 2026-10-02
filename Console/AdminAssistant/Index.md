@@ -9,7 +9,7 @@ icon: "sparkles"
 
 **Admin Assistant** is the in-app operator assistant in the RAGSuite console. Use it to ask about **this project’s** chatbot history, usage metrics, crawl health, and configuration.
 
-It is **not** [AI Chatbot](/Console/AIChatbot/Index) (the citation-backed chat experience for your corpus, including embeddable widgets). It is **not** [AI Voice Pilot](/Enterprise/AIVoicePilot/Index) (Enterprise spoken RAG).
+It is **not** [AI Chatbot](/Console/AIChatbot/Index) (the citation-backed chat experience for your corpus, including embeddable widgets). It is **not** [AI Voice Pilot](/Console/AIVoicePilot/Index) (spoken RAG in the dashboard).
 
 ## What it is for
 
@@ -23,7 +23,7 @@ It is **not** [AI Chatbot](/Console/AIChatbot/Index) (the citation-backed chat e
 |---------|------|
 | **AI Chatbot** | End-user / embeddable RAG chat grounded in your corpus |
 | **Admin Assistant** | In-console help for operators on the active project |
-| **AI Voice Pilot** | Enterprise speak-and-hear answers against the knowledge base |
+| **AI Voice Pilot** | Speak-and-hear answers against the knowledge base in the dashboard |
 
 ## Related
 

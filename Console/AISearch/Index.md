@@ -20,7 +20,8 @@ Publish search where your team already works (website, intranet, apps) via the s
 ## Related
 
 - [Citations & feedback](/Console/CitationsAndFeedback/Index)
-- [Crawl](/SourcesAndConnectors/Crawl/Index) and [Documents](/SourcesAndConnectors/Documents/Index) to grow the corpus
+- [Crawl](/SourcesAndConnectors/Crawl/Index), [Documents](/SourcesAndConnectors/Documents/Index), and [Text & Q&A pairs](/SourcesAndConnectors/TextAndQA/Index) to grow the corpus
+- [Model Configuration](/Console/ModelConfiguration/Index) for the provider, API key, and Search tuning
 - [Models](/Models/Index) for which LLM backs generation
 
 ## Interactive tour

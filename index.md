@@ -38,13 +38,13 @@ ragsuite start
 
 <CardGroup cols={2}>
   <Card title="AI Search" icon="search" href="/Console/AISearch/Index">
-    Citation-backed search across documents and connected sources.
+    Citation-backed search across your websites, documents, and written sources.
   </Card>
   <Card title="AI Chatbot" icon="message-circle" href="/Console/AIChatbot/Index">
     Streaming chat grounded in your content — every reply cites its source.
   </Card>
-  <Card title="Sources & Connectors" icon="plug" href="/SourcesAndConnectors/Index">
-    Crawl, upload, Gmail, MCP, and n8n (Beta). Embed where your team works.
+  <Card title="Sources & Integrations" icon="plug" href="/SourcesAndConnectors/Index">
+    Domain, sitemap XML, documents, text, Q&A pairs, MCP, and n8n (Beta). Embed where your team works.
   </Card>
   <Card title="Models" icon="brain" href="/Models/Index">
     OpenAI, Anthropic, Mistral, Gemini, or local Custom LLM / Ollama.
@@ -57,10 +57,10 @@ ragsuite start
 
 <CardGroup cols={3}>
   <Card title="Community Edition" icon="box" href="/GettingStarted/CommunityVsEnterprise/Index">
-    Apache 2.0 — full pipeline, connectors, models, REST API, unlimited users and projects.
+    Apache 2.0 — full pipeline, MCP, Voice, AI Voice Pilot, models, REST API, unlimited users and projects.
   </Card>
   <Card title="Enterprise" icon="building-2" href="/Enterprise/Index">
-    SSO, org RBAC, Compare Models, audit, analytics, Voice, AI Voice Pilot, and mobile (Beta).
+    SSO, org RBAC, Compare Models, full audit, data retention, analytics, white label, and mobile (Beta).
   </Card>
   <Card title="Security & Trust" icon="shield" href="/SecurityAndTrust/Index">
     Self-hosted, no telemetry, inspectable source, citations you can verify.

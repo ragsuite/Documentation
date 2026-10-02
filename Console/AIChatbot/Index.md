@@ -9,7 +9,7 @@ icon: "message-circle"
 
 The AI Chatbot is a streaming chat experience grounded in your own content. Every reply is expected to carry citations so people can verify the passage before they act.
 
-It is **not** [Admin Assistant](/Console/AdminAssistant/Index) (in-console operator help). It is **not** [AI Voice Pilot](/Enterprise/AIVoicePilot/Index) (Enterprise spoken RAG).
+It is **not** [Admin Assistant](/Console/AdminAssistant/Index) (in-console operator help). It is **not** [AI Voice Pilot](/Console/AIVoicePilot/Index) (spoken RAG in the dashboard).
 
 ## Principle
 
@@ -25,10 +25,18 @@ Open Chatbot / chat mode, select the project whose sources you trust, and ask op
 
 The chatbot widget can be embedded on your sites. See [Widgets & embeds](/SourcesAndConnectors/Widgets/Index).
 
+## Models
+
+The chatbot uses a provider configured in [Model Configuration](/Console/ModelConfiguration/Index); chat model, API key, and Chatbot tuning come from there.
+
+## Voice features
+
+- **Voice** (widget mic / speaker) — **Talk and listen** option ([Voice (widgets)](/Console/Voice/Index))
+- **AI Voice Pilot** — speak-and-hear RAG in the dashboard (and optional Layout 2 chatbot surface) ([AI Voice Pilot](/Console/AIVoicePilot/Index))
+
 ## Enterprise add-ons
 
-- **Voice** (widget mic / speaker) — Enterprise entitlement ([Voice (widgets)](/Enterprise/Voice/Index))
-- **AI Voice Pilot** — speak-and-hear RAG in the dashboard (and optional Layout 2 chatbot surface) — ([AI Voice Pilot](/Enterprise/AIVoicePilot/Index))
+- **White label** — custom chatbot title, header logo, and disclaimer ([CE vs EE](/GettingStarted/CommunityVsEnterprise/Index))
 - **Compare Models** — score the same query across models ([Compare Models](/Enterprise/CompareModels/Index))
 - **Query tracing** — deeper timing and confidence traces ([Query tracing](/Enterprise/QueryTracing/Index))
 

@@ -41,7 +41,19 @@
   "redirects": [
     {
       "source": "/SourcesAndConnectors/ConnectorsAndMCP/Index",
-      "destination": "/SourcesAndConnectors/Connectors/Index"
+      "destination": "/SourcesAndConnectors/Index"
+    },
+    {
+      "source": "/SourcesAndConnectors/Connectors/Index",
+      "destination": "/SourcesAndConnectors/Index"
+    },
+    {
+      "source": "/Enterprise/Voice/Index",
+      "destination": "/Console/Voice/Index"
+    },
+    {
+      "source": "/Enterprise/AIVoicePilot/Index",
+      "destination": "/Console/AIVoicePilot/Index"
     }
   ],
   "navbar": {
@@ -94,19 +106,22 @@
           "Console/AISearch/Index",
           "Console/AIChatbot/Index",
           "Console/AdminAssistant/Index",
+          "Console/Voice/Index",
+          "Console/AIVoicePilot/Index",
+          "Console/ModelConfiguration/Index",
           "Console/CitationsAndFeedback/Index",
           "Console/Projects/Index",
           "Console/Authentication/Index"
         ]
       },
       {
-        "group": "Sources & Connectors",
+        "group": "Sources & Integrations",
         "icon": "plug",
         "pages": [
           "SourcesAndConnectors/Index",
           "SourcesAndConnectors/Documents/Index",
           "SourcesAndConnectors/Crawl/Index",
-          "SourcesAndConnectors/Connectors/Index",
+          "SourcesAndConnectors/TextAndQA/Index",
           "SourcesAndConnectors/MCP/Index",
           "SourcesAndConnectors/Widgets/Index",
           "SourcesAndConnectors/N8n/Index"
@@ -144,8 +159,6 @@
           "Enterprise/QueryTracing/Index",
           "Enterprise/AuditAndCompliance/Index",
           "Enterprise/CompareModels/Index",
-          "Enterprise/Voice/Index",
-          "Enterprise/AIVoicePilot/Index",
           "Enterprise/Mobile/Index"
         ]
       },

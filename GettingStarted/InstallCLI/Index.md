@@ -5,7 +5,7 @@ sidebarTitle: "Install CLI"
 icon: "terminal"
 ---
 
-The official **Platform Manager CLI** is published on npm as [`@ragsuite/ragsuite`](https://www.npmjs.com/package/@ragsuite/ragsuite) (current release **1.0.3**). It installs and runs Community Edition on your machine. **Community needs no offline license key.**
+The official **Platform Manager CLI** is published on npm as [`@ragsuite/ragsuite`](https://www.npmjs.com/package/@ragsuite/ragsuite) (see npm for the current release). It installs and runs Community Edition on your machine. **Community needs no offline license key.**
 
 ```bash
 npm install -g @ragsuite/ragsuite@latest

@@ -1,6 +1,6 @@
 ---
 title: "Console overview"
-description: "Operate AI Search, AI Chatbot, Admin Assistant, projects, and authentication in the RAGSuite console."
+description: "Operate AI Search, AI Chatbot, Admin Assistant, Voice, AI Voice Pilot, Model Configuration, projects, and authentication in the RAGSuite console."
 sidebarTitle: "Console overview"
 icon: "layout-panel-left"
 ---
@@ -20,6 +20,8 @@ After install, day-to-day work happens in the console. Non-technical operators u
 - Run **AI Search** across your corpus and open the source behind every hit.
 - Chat with **AI Chatbot** and follow citations on each reply.
 - Use **Admin Assistant** for in-console help on project history, metrics, crawl health, and configuration.
+- Speak to your knowledge base with **AI Voice Pilot**, and turn on **Voice** (mic / speaker) for widgets.
+- Set up AI providers once per project in **Model Configuration**.
 - Capture feedback so quality improves over time.
 - Isolate knowledge bases with projects; use password auth and 2FA (SSO is Enterprise).
 
@@ -44,6 +46,15 @@ Open `http://localhost:9191` on a local install (or your published console URL).
   </Card>
   <Card title="Admin Assistant" icon="sparkles" href="/Console/AdminAssistant/Index">
     In-app operator assistant for the active project.
+  </Card>
+  <Card title="Voice (widgets)" icon="mic" href="/Console/Voice/Index">
+    Browser mic and speaker on Chatbot and Search widgets.
+  </Card>
+  <Card title="AI Voice Pilot" icon="audio-lines" href="/Console/AIVoicePilot/Index">
+    Speak to your knowledge base and hear spoken answers.
+  </Card>
+  <Card title="Model Configuration" icon="cpu" href="/Console/ModelConfiguration/Index">
+    AI providers, keys, and tuning for the project.
   </Card>
   <Card title="Citations & feedback" icon="message-square" href="/Console/CitationsAndFeedback/Index">
     Verify sources and improve answer quality.

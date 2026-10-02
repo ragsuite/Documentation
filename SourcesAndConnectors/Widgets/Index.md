@@ -19,11 +19,14 @@ Product embed surfaces in Community include chat/search widget loaders (for exam
 - Configure CSP and allowed origins for production sites.
 - Align API keys / content tokens with the target project.
 
-## Enterprise widget features
+## Voice features (Community)
 
-- **Voice** mic/speaker on chatbot and search widgets — Enterprise entitlement ([Voice (widgets)](/Enterprise/Voice/Index))
-- **AI Voice Pilot** on chatbot **Layout 2** (Home CTA and footer tab) when Enterprise entitlements allow it — ([AI Voice Pilot](/Enterprise/AIVoicePilot/Index))
-- White-label / custom widget domain — **by agreement** (services), not a free CE module
+- **Voice** mic/speaker on chatbot and search widgets ([Voice (widgets)](/Console/Voice/Index))
+- **AI Voice Pilot** on chatbot **Layout 2** (Home CTA and footer tab) ([AI Voice Pilot](/Console/AIVoicePilot/Index))
+
+## Enterprise widget branding
+
+- **White label** — custom chatbot title, header logo, and disclaimer text and link. Community widgets keep the RAGSuite brand.
 
 ## Related
 

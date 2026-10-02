@@ -1,19 +1,22 @@
 ---
 title: "Audit & compliance"
-description: "Community basic audit (30 days) vs Enterprise full audit logs and compliance exports."
+description: "Community basic audit (15 days) vs Enterprise full audit history, CSV/JSON export, and per-project data retention."
 sidebarTitle: "Audit & compliance"
 icon: "clipboard-list"
 ---
 
 ## Community
 
-**Basic audit** with a **~30-day** browse window is a Community capability. Use it for day-to-day traceability of who asked what on your deployment.
+**Basic audit** keeps the **last 15 days** of events; older events are purged daily. Use it for day-to-day traceability of who asked what on your deployment.
+
+Community keeps project data without a time limit. The data retention settings appear as a locked preview.
 
 ## Enterprise
 
-Enterprise includes **full audit logs**, **compliance exports**, and **configurable audit retention** so every answer stays traceable for compliance review — on your infrastructure.
+- **Full audit logs** — unlimited audit history with **CSV / JSON export** for compliance review.
+- **Per-project data retention** — set in **Settings › Data Retention**. When auto-delete is enabled, older data is purged according to the policy you configure for each project.
 
-Retention is set in **Settings › Data Retention**. When auto-delete is enabled, older audit events can be purged according to your configured policy.
+Every answer stays traceable — on your infrastructure.
 
 Evidence stays on **your** systems. For Trust Center / due-diligence narratives, see [Sovereignty](/SecurityAndTrust/Sovereignty/Index) and the marketing Trust Center on [ragsuite.de](https://www.ragsuite.de).
 

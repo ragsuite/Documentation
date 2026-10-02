@@ -9,7 +9,7 @@ icon: "plug"
 
 **MCP** (Model Context Protocol) lets the AI apps you use talk **to** RAGSuite on your infrastructure. In the console open **Management → MCP**.
 
-This is **not** [Connectors](/SourcesAndConnectors/Connectors/Index) (inbound Gmail, Drive, Slack, Teams, and related Sources sync). It is also not the general REST [API keys & webhooks](/Platform/APIKeysAndWebhooks/Index) surface used for widgets and HTTP automation — MCP keys are issued specifically for MCP hosts.
+MCP is outbound: it does not add content to a project (use [Sources](/SourcesAndConnectors/Index) for that). It is also not the general REST [API keys & webhooks](/Platform/APIKeysAndWebhooks/Index) surface used for widgets and HTTP automation — MCP keys are issued specifically for MCP hosts.
 
 ## Keys
 
@@ -59,6 +59,6 @@ Exact menu labels vary by host version — follow the numbered steps shown in th
 
 ## Related
 
-- [Connectors](/SourcesAndConnectors/Connectors/Index)
+- [Sources overview](/SourcesAndConnectors/Index)
 - [API keys & webhooks](/Platform/APIKeysAndWebhooks/Index)
 - [Widgets](/SourcesAndConnectors/Widgets/Index)

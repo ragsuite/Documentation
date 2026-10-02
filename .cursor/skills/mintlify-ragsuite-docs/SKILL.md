@@ -27,8 +27,9 @@ Do not modify CE/EE application repos unless the user explicitly asks.
 ## Product naming
 
 - **AI Search**, **AI Chatbot**, and **Admin Assistant** (never product name “AI Assistant”).
-- **Voice (widgets)** and **AI Voice Pilot** are different Enterprise modules — do not conflate them.
-- Paths: `Console/AISearch/`, `Console/AIChatbot/`, `Console/AdminAssistant/`, `Enterprise/Voice/`, `Enterprise/AIVoicePilot/`.
+- **Voice (widgets)** and **AI Voice Pilot** are different Community modules — do not conflate them.
+- Paths: `Console/AISearch/`, `Console/AIChatbot/`, `Console/AdminAssistant/`, `Console/Voice/`, `Console/AIVoicePilot/`, `Console/ModelConfiguration/`.
+- Sources = **Domain**, **Sitemap XML**, **Document**, **Text**, **Q&A Pairs**. Inbound connectors (Gmail, Drive, Slack, Teams, …) are not shipped — do not document them. Nav group label is **Sources & Integrations** (folder stays `SourcesAndConnectors/`).
 - CLI: **`@ragsuite/ragsuite`** → binary **`ragsuite`**. No other package name.
 
 ## CLI truth

@@ -20,15 +20,17 @@ Commercial comparison: [ragsuite.de/pricing](https://www.ragsuite.de/pricing/#co
 
 ## Community Edition — €0 · Apache 2.0
 
-- Full pipeline: crawl, upload, chat (**AI Chatbot**), search (**AI Search**), widgets  
+- Full pipeline: sources, chat (**AI Chatbot**), search (**AI Search**), widgets  
+- [Sources](/SourcesAndConnectors/Index): **Domain** crawl, **Sitemap XML**, **Document** upload, **Text**, and **Q&A Pairs**  
 - **Admin Assistant** — in-console operator assistant (not the embeddable chatbot)  
-- [Connectors](/SourcesAndConnectors/Connectors/Index) (Gmail, Google Drive, Slack, Microsoft Teams, marketplace)  
+- [Voice (widgets)](/Console/Voice/Index) — speech input and spoken answers on Chatbot and Search widgets  
+- [AI Voice Pilot](/Console/AIVoicePilot/Index) — speak to the knowledge base and hear spoken answers  
 - [MCP](/SourcesAndConnectors/MCP/Index) — Management keys so Cursor, Claude, VS Code, and similar hosts call RAGSuite  
 - **n8n** is **Beta**  
-- Curated LLM providers (**OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**, **Custom LLM / Ollama**)  
+- [Model Configuration](/Console/ModelConfiguration/Index) with curated LLM providers (**OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**, **Custom LLM / Ollama**)  
 - REST API, API keys, webhooks  
 - Citations, feedback, password auth, 2FA & sessions  
-- System health, notifications, basic audit (30 days)  
+- System health, notifications, basic audit (15 days)  
 - Unlimited users and unlimited projects  
 - Docker / native self-hosting via [`@ragsuite/ragsuite`](https://www.npmjs.com/package/@ragsuite/ragsuite)  
 
@@ -41,15 +43,14 @@ Requires a vendor-issued **offline key** and **Enterprise bundle**.
 | Area | Notes |
 |------|--------|
 | SSO | Google OIDC single sign-on |
-| Org RBAC | Teams, orgs, members, and project access control (organization Team Members — not the Microsoft Teams Sources connector) |
+| Org RBAC | Teams, orgs, members, and project access control |
 | Compare Models | Side-by-side model scoring on your infrastructure |
 | Query tracing | Deep query tracing for compliance and quality review |
 | Analytics | Advanced analytics |
-| Audit & compliance | Full audit logs, compliance exports, and **configurable audit retention** (Settings › Data Retention) |
-| Voice (widgets) | Entitlement-gated STT/TTS on Chatbot and Search widgets |
-| AI Voice Pilot | Speak to the knowledge base and hear spoken answers (ElevenLabs); distinct from widget Voice |
+| Audit & compliance | Full audit logs with unlimited history and CSV/JSON export; per-project data retention (Settings › Data Retention) |
+| White label | Custom chatbot title, header logo, and disclaimer text and link; option to hide the console system footer |
 | Mobile app | **Beta** |
-| Services | White-label, SLA, CSM — by agreement |
+| Services | SLA and CSM — by agreement |
 
 Pricing (marketing site): **€25 / user / month**, billed annually — confirm current terms on [pricing](https://www.ragsuite.de/pricing/#comparison). Fulfillment is sales-led (`sales@ragsuite.de`).
 

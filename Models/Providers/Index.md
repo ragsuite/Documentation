@@ -7,7 +7,7 @@ icon: "cloud"
 
 **Edition:** Community (`llm_providers`)
 
-RAGSuite is **model-agnostic** within the providers below. Configure **your** API keys (or a local Ollama host) and pick chat / embedding models per project. See [Bring your own keys](/Models/BringYourOwnKeys/Index).
+RAGSuite is **model-agnostic** within the providers below. Configure **your** API keys (or a local Ollama host) and pick chat / embedding models per project in Console › [Model Configuration](/Console/ModelConfiguration/Index). See [Bring your own keys](/Models/BringYourOwnKeys/Index).
 
 The console model picker uses these **curated** catalogs. Live API or Ollama discovery can add more **chat** models when keys or hosts are available.
 

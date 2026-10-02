@@ -7,7 +7,7 @@ icon: "key"
 
 **Edition:** Community
 
-RAGSuite uses **your** provider credentials. Configure keys in the console / provider settings for the models you enable. Product positioning: your data stays on your infrastructure and is not used to train someone else’s model as part of RAGSuite’s design.
+RAGSuite uses **your** provider credentials. Configure keys per project in Console › [Model Configuration](/Console/ModelConfiguration/Index); keys are stored encrypted and verified with the provider when you save. Product positioning: your data stays on your infrastructure and is not used to train someone else’s model as part of RAGSuite’s design.
 
 ## Security basics
 

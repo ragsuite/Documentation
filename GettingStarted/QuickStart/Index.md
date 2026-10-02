@@ -9,7 +9,7 @@ Get a running Community Edition console on your infrastructure. **No offline lic
 
 ## Recommended: Platform Manager CLI
 
-Published package: [`@ragsuite/ragsuite`](https://www.npmjs.com/package/@ragsuite/ragsuite) (v**1.0.3**).
+Published package: [`@ragsuite/ragsuite`](https://www.npmjs.com/package/@ragsuite/ragsuite) — install `@latest` to get the current release.
 
 <Steps>
   <Step title="Install">

@@ -9,7 +9,7 @@ icon: "users"
 
 Enterprise adds organization-level access control beyond Community projects: **RBAC**, teams and orgs, membership, and project access — so you can govern who sees which knowledge bases.
 
-This is **organization Team Members / RBAC** (Enterprise). It is **not** the **Microsoft Teams** Sources connector used to crawl Teams content into a project.
+This is **organization Team Members / RBAC** (Enterprise).
 
 Community Edition still supports unlimited users and unlimited projects under product terms, without Enterprise org RBAC.
 

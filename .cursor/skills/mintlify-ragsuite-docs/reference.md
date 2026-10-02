@@ -7,7 +7,7 @@
 | Product positioning | https://www.ragsuite.de / https://ragsuite.de |
 | Live documentation | https://docs.ragsuite.de |
 | CE install / ports | `/Users/arun/RAGSUITE/README.md` |
-| npm CLI | https://www.npmjs.com/package/@ragsuite/ragsuite (`@ragsuite/ragsuite`, bin `ragsuite`, v1.0.3+) |
+| npm CLI | https://www.npmjs.com/package/@ragsuite/ragsuite (`@ragsuite/ragsuite`, bin `ragsuite`; keep customer docs version-neutral) |
 | CLI README | `/Users/arun/RAGSUITE/cli/README.md` |
 | CE vs EE modules (engineering) | `/Users/arun/RAGSUITE/docs/architecture/FEATURE-MATRIX.md` |
 | License / ownership | `/Users/arun/RAGSUITE/NOTICE`, `LICENSE` |
@@ -41,33 +41,37 @@ Use `Steps`, `Tabs`, `Tip`/`Warning`, `CardGroup`, and `.rg-landing-*` / `.rg-ct
 ## Product names
 
 - **AI Search** + **AI Chatbot** + **Admin Assistant** (never product name “AI Assistant”)
-- **Voice (widgets)** ≠ **AI Voice Pilot** (both EE; document separately)
+- **Voice (widgets)** ≠ **AI Voice Pilot** (both CE; document separately)
 
 ## CE (document as available)
 
-Full pipeline: crawl, upload, chat (AI Chatbot), search (AI Search), widgets.
+Full pipeline: sources, chat (AI Chatbot), search (AI Search), widgets.
+Sources tabs: **Domain** (crawl), **Sitemap XML**, **Document** (upload), **Text**, **Q&A Pairs**.
+Inbound connectors (Gmail, Drive, Slack, Teams, Marketplace, …) are not shipped — do not document them.
 **Admin Assistant** (in-console operator assistant — not the embeddable chatbot).
-Connectors (Gmail, Google Drive, Slack, Microsoft Teams, Marketplace); **n8n = Beta**.
-**MCP** (Management → MCP keys / host setup) is a separate CE module — not an inbound connector.
+**Voice (widgets)** — browser STT/TTS on Chatbot and Search widgets.
+**AI Voice Pilot** — speak-and-hear RAG (Custom voices or ElevenLabs); distinct from widget Voice.
+**Model Configuration** — project-wide providers, encrypted keys, Chatbot / Search tuning.
+**MCP** (Management → MCP keys / host setup); **n8n = Beta** (Integrations screen).
 Curated LLM providers only: **OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**,
 **Custom LLM / Ollama** (with curated chat/embedding IDs — see Models/Providers).
 Do not invent Azure OpenAI, Aleph Alpha, IONOS, OVHcloud, vLLM, or other vendors.
 Citations; feedback; password auth; 2FA & sessions;
-system health; audit basic (30 days); notifications; unlimited users/projects.
+system health; audit basic (15 days, older events purged daily); notifications; unlimited users/projects.
 REST API, API keys, webhooks plumbing; Docker / native deploy.
 
 ## EE (requires Enterprise license + bundle)
 
 - SSO — **Google OIDC** (shipped). Do not mention SAML or generic OIDC.
 - Organization / RBAC — teams, orgs, members, project access (shipped).
-- Audit full + compliance exports
+- Audit full — unlimited history + CSV/JSON export
+- Compliance — per-project data retention (Settings › Data Retention)
 - Compare Models
 - Query tracing
 - Analytics (advanced in EE)
-- Voice (widgets) — entitlement-gated STT/TTS on Chatbot and Search widgets
-- AI Voice Pilot — speak-and-hear RAG (ElevenLabs); distinct from widget Voice
+- White label — custom chatbot title, header logo, disclaimer; hide console system footer
 - Mobile app = **Beta**
-- White-label / SLA / CSM = by-agreement services
+- SLA / CSM = by-agreement services
 
 ## Do not invent
 

@@ -1,6 +1,6 @@
 ---
 title: "Enterprise overview"
-description: "RAGSuite Enterprise — SSO, RBAC, Compare Models, audit, analytics, Voice, AI Voice Pilot, mobile Beta."
+description: "RAGSuite Enterprise — SSO, RBAC, Compare Models, full audit, data retention, analytics, white label, mobile Beta."
 sidebarTitle: "Enterprise overview"
 icon: "building-2"
 ---
@@ -19,7 +19,7 @@ Community Edition is a complete practitioner product. Enterprise adds what regul
 
 1. License and [Activation](/Enterprise/Activation/Index) with your offline key and bundle.
 2. Connect [SSO](/Enterprise/SSO/Index) (Google OIDC) and [org RBAC](/Enterprise/OrganizationAndRBAC/Index).
-3. Turn on quality and compliance tools — Compare Models, analytics, query tracing, audit.
+3. Turn on quality and compliance tools — Compare Models, analytics, query tracing, full audit, and data retention.
 
 <Warning>
 Enterprise source and offline license keys are private NITSAN products.
@@ -59,12 +59,6 @@ Commercial overview: [Pricing comparison](https://www.ragsuite.de/pricing/#compa
   </Card>
   <Card title="Audit & compliance" icon="clipboard-list" href="/Enterprise/AuditAndCompliance/Index">
     Evidence who asked what — on your infrastructure.
-  </Card>
-  <Card title="Voice (widgets)" icon="mic" href="/Enterprise/Voice/Index">
-    Browser STT/TTS mic and speaker on Chatbot and Search widgets.
-  </Card>
-  <Card title="AI Voice Pilot" icon="audio-lines" href="/Enterprise/AIVoicePilot/Index">
-    Speak to your knowledge base and hear spoken answers.
   </Card>
   <Card title="Mobile (Beta)" icon="smartphone" href="/Enterprise/Mobile/Index">
     Citation-backed answers on mobile — Beta.

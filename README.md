@@ -27,8 +27,8 @@ mint dev
 |------|---------|
 | `docs.json` | Navigation, theme, navbar, footer |
 | `GettingStarted/` | Install, CLI, Docker, configuration |
-| `Console/` | AI Search, AI Chatbot, projects, auth |
-| `SourcesAndConnectors/` | Crawl, documents, connectors, MCP, widgets |
+| `Console/` | AI Search, AI Chatbot, Admin Assistant, Voice, AI Voice Pilot, Model Configuration, projects, auth |
+| `SourcesAndConnectors/` | Crawl (domain, sitemap XML), documents, text & Q&A pairs, MCP, n8n, widgets |
 | `Enterprise/` | EE features (license required) |
 | `_static/` | Logos and favicon |
 | `custom.css` | Chrome polish (sidebar, logo label, readability) |

@@ -7,15 +7,15 @@ icon: "git-branch"
 
 **Edition:** Community · **Status:** Beta
 
-n8n integration is part of the Community connectors ecosystem and is explicitly labeled **Beta** on [ragsuite.de](https://www.ragsuite.de) and in the product feature matrix.
+n8n integration lives in the console **Integrations** screen next to API keys, and is explicitly labeled **Beta** on [ragsuite.de](https://www.ragsuite.de) and in the product feature matrix.
 
 ## What that means for you
 
 - Suitable for evaluation and controlled pilots.
 - Expect changes in setup, APIs, or UI before a non-Beta designation.
-- Do not treat Beta connectors as covered by Enterprise SLA language unless your contract says otherwise.
+- Do not treat Beta integrations as covered by Enterprise SLA language unless your contract says otherwise.
 
-For stable ingestion paths today, prefer crawl, document upload, and [Connectors](/SourcesAndConnectors/Connectors/Index) (Gmail and related Sources sync). To connect AI apps **to** RAGSuite, use [MCP](/SourcesAndConnectors/MCP/Index).
+For stable ingestion paths today, prefer [Crawl](/SourcesAndConnectors/Crawl/Index) (domain or sitemap XML), [Documents](/SourcesAndConnectors/Documents/Index), and [Text & Q&A pairs](/SourcesAndConnectors/TextAndQA/Index). To connect AI apps **to** RAGSuite, use [MCP](/SourcesAndConnectors/MCP/Index).
 
 ## Interactive tour
 
