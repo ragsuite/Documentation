@@ -18,7 +18,7 @@ Community Edition is a complete practitioner product. Enterprise adds what regul
 **Typical Enterprise path**
 
 1. License and [Activation](/Enterprise/Activation/Index) with your offline key and bundle.
-2. Connect [SSO](/Enterprise/SSO/Index) (Google OIDC) and [org RBAC](/Enterprise/OrganizationAndRBAC/Index).
+2. Connect [SSO](/Enterprise/SSO/Index) (Google or Microsoft Entra ID) and [org RBAC](/Enterprise/OrganizationAndRBAC/Index).
 3. Turn on quality and compliance tools — Compare Models, analytics, query tracing, full audit, and data retention.
 
 <Warning>
@@ -43,7 +43,7 @@ Commercial overview: [Pricing comparison](https://www.ragsuite.de/pricing/#compa
     Apply your offline license key and entitled bundle.
   </Card>
   <Card title="SSO" icon="log-in" href="/Enterprise/SSO/Index">
-    Google OIDC sign-in for your organization.
+    Google or Microsoft Entra ID sign-in for your organization.
   </Card>
   <Card title="Organization & RBAC" icon="users" href="/Enterprise/OrganizationAndRBAC/Index">
     Teams, roles, and project access control.

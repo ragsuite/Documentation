@@ -1,6 +1,6 @@
 ---
 title: "Architecture"
-description: "High-level RAGSuite architecture — FastAPI, Expo, Postgres, Redis, ChromaDB."
+description: "High-level RAGSuite architecture — FastAPI, Expo, PostgreSQL with pgvector, Redis."
 sidebarTitle: "Architecture"
 icon: "boxes"
 ---
@@ -10,11 +10,11 @@ RAGSuite Community Edition is a self-hosted RAG platform:
 ```text
 Sources (domain crawl · sitemap XML · upload · text · Q&A pairs)
         ↓
-RAGSuite (FastAPI · PostgreSQL · Redis · ChromaDB)
+RAGSuite (FastAPI · PostgreSQL + pgvector · Redis)
         ↓
 Console + Widgets + MCP (AI Search · AI Chatbot · Admin Assistant · AI Voice Pilot · MCP hosts)
         ↓
-LLMs (OpenAI · Anthropic · Mistral · Gemini · or Custom LLM / Ollama locally)
+LLMs (OpenAI · Azure OpenAI · Anthropic · Mistral · Gemini · or Custom LLM / Ollama locally)
 ```
 
 ## Components
@@ -23,9 +23,8 @@ LLMs (OpenAI · Anthropic · Mistral · Gemini · or Custom LLM / Ollama locally
 |-----------|------|
 | **FastAPI** | HTTP API under `/api/v1`, OpenAPI at `:9090/docs` |
 | **Expo admin UI** | Operator console on `:9191` |
-| **PostgreSQL** | Primary application database (`ragsuite_v3`) |
+| **PostgreSQL** | Application database (`ragsuite_v3`) and vector store (**pgvector**, schema `ragvec`, HNSW index per collection) |
 | **Redis** | Cache / jobs |
-| **ChromaDB** | Vector store |
 | **CLI** | `@ragsuite/ragsuite` Platform Manager |
 | **Modules** | Community feature modules; Enterprise modules via licensed bundles |
 

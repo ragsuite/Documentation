@@ -28,7 +28,7 @@ RAGSuite is a **sovereign enterprise AI platform**: self-hosted or air-gapped RA
 | Admin console | Expo |
 | Database | PostgreSQL |
 | Cache / jobs | Redis |
-| Vectors | ChromaDB |
+| Vectors | pgvector (in PostgreSQL) |
 | Deploy | Native processes or Docker Compose |
 | Local LLMs | Custom LLM / Ollama (optional) |
 

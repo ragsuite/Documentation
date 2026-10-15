@@ -71,7 +71,7 @@ ragsuite restart
 | `ENABLE_ASYNC_DOCUMENT_INGEST` | Async document ingest |
 | `RAGSUITE_EE_ROOT` | Absolute path to EE tree when attaching Enterprise for Docker DX |
 
-Backend settings (database URL, Redis, Chroma, `OLLAMA_BASE_URL`) live in the backend env template in the Community repository.
+Backend settings (database URL, Redis, vector store, `OLLAMA_BASE_URL`) live in the backend env template in the Community repository. The vector store is pgvector in the same Postgres and uses `DATABASE_URL` by default.
 
 ## After changes
 

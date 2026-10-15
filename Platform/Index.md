@@ -8,7 +8,7 @@ icon: "layers"
 <div className="rg-landing-hero">
   <p className="rg-landing-eyebrow">Open, inspectable stack</p>
   <p className="rg-landing-subtitle">
-    FastAPI API, Expo admin console, PostgreSQL, Redis, and ChromaDB — deployable
+    FastAPI API, Expo admin console, PostgreSQL with pgvector, and Redis — deployable
     natively or with Docker on infrastructure you control.
   </p>
 </div>
@@ -17,7 +17,7 @@ This section is for engineers who need to integrate, audit, or operate the platf
 
 **What you will find**
 
-- How services fit together (API, console, databases, vector store).
+- How services fit together (API, console, PostgreSQL with the pgvector vector store, Redis).
 - The REST surface for automation and embeds.
 - API keys and webhooks for event-driven workflows.
 

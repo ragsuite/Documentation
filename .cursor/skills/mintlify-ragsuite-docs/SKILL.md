@@ -47,14 +47,15 @@ ragsuite init
 ragsuite start
 ```
 
-Ports: API **9090**, Web **9191**, Postgres **5436**, Redis **6382**, Chroma **8004** (native).
+Ports: API **9090**, Web **9191**, Postgres **5436**, Redis **6382**. Postgres needs the **pgvector** extension (vector store); there is no ChromaDB service or port.
 
 ## Authenticity rules
 
 1. Prefer ragsuite.de + CE README / CLI README. Do not leak GAPS.md into customer docs.
 2. Label **Community** vs **Enterprise**. Mark **Beta** only for n8n and mobile.
-3. SSO = Google OIDC. Do not document SAML/generic OIDC.
+3. SSO = Google or Microsoft Entra ID (OIDC). Do not document SAML or other identity providers, and do not add "X is not supported" lines — describe only what ships.
 4. Org RBAC shipped. Admin UI = **Expo**; API = **FastAPI**.
+5. Vector store = **pgvector** in PostgreSQL. Never document ChromaDB except in the upgrade note for 1.0.7-and-earlier installs.
 
 ## Writing tone
 

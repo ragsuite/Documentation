@@ -53,16 +53,17 @@ Inbound connectors (Gmail, Drive, Slack, Teams, Marketplace, …) are not shippe
 **AI Voice Pilot** — speak-and-hear RAG (Custom voices or ElevenLabs); distinct from widget Voice.
 **Model Configuration** — project-wide providers, encrypted keys, Chatbot / Search tuning.
 **MCP** (Management → MCP keys / host setup); **n8n = Beta** (Integrations screen).
-Curated LLM providers only: **OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**,
+LLM providers only: **OpenAI**, **Azure OpenAI** (endpoint + deployment names, no curated list), **Anthropic**, **Mistral**, **Google Gemini**,
 **Custom LLM / Ollama** (with curated chat/embedding IDs — see Models/Providers).
-Do not invent Azure OpenAI, Aleph Alpha, IONOS, OVHcloud, vLLM, or other vendors.
+Do not invent Aleph Alpha, IONOS, OVHcloud, vLLM, or other vendors.
+Vector store: **pgvector** in PostgreSQL (schema `ragvec`). Never document ChromaDB except the 1.0.7-and-earlier upgrade note.
 Citations; feedback; password auth; 2FA & sessions;
 system health; audit basic (15 days, older events purged daily); notifications; unlimited users/projects.
 REST API, API keys, webhooks plumbing; Docker / native deploy.
 
 ## EE (requires Enterprise license + bundle)
 
-- SSO — **Google OIDC** (shipped). Do not mention SAML or generic OIDC.
+- SSO — **Google** and **Microsoft Entra ID** over OIDC (shipped). Do not mention SAML or other identity providers.
 - Organization / RBAC — teams, orgs, members, project access (shipped).
 - Audit full — unlimited history + CSV/JSON export
 - Compliance — per-project data retention (Settings › Data Retention)
@@ -75,7 +76,7 @@ REST API, API keys, webhooks plumbing; Docker / native deploy.
 
 ## Do not invent
 
-- Extra LLM cloud vendors beyond the five curated providers (no Azure OpenAI, Aleph Alpha, IONOS, OVHcloud, vLLM as shipped configs)
+- Extra LLM cloud vendors beyond the six shipped providers (no Aleph Alpha, IONOS, OVHcloud, vLLM as shipped configs)
 - Model IDs not in the curated catalogs / user-approved lists (except documenting live discovery and named runtime embedding extras)
 - SCIM, SIEM streaming, usage meters as product-ready
 - Public self-serve license portal

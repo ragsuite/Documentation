@@ -8,7 +8,7 @@ icon: "heart-pulse"
 `ragsuite doctor` checks that your machine meets the requirements for the install mode you chose (`native` or `docker`).
 
 <Tip>
-Run `ragsuite doctor` after `init`, and again whenever Node, Python, Postgres, Redis, Chroma, or Docker changes.
+Run `ragsuite doctor` after `init`, and again whenever Node, Python, Postgres (including pgvector), Redis, or Docker changes.
 </Tip>
 
 ## CLI (recommended)
@@ -32,8 +32,8 @@ bash scripts/doctor.sh
   <Step title="Redis">
     Confirm Redis listens on **6382**.
   </Step>
-  <Step title="Chroma">
-    Native mode expects Chroma on **8004**. Docker mode keeps Chroma internal to Compose.
+  <Step title="pgvector">
+    Vectors are stored in Postgres with the **pgvector** extension, so doctor checks that the extension is available. Docker: rebuild Postgres with `docker compose up -d --build postgres`. Host Postgres: install pgvector for your PostgreSQL version (for example `brew install pgvector` or `apt install postgresql-<version>-pgvector`).
   </Step>
   <Step title="Runtime tools">
     Use **Node.js 18+** (20/22 LTS recommended). Native mode also needs **Python 3.14** and Yarn **1.22+**.

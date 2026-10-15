@@ -15,12 +15,13 @@ Requirements match the official Platform Manager CLI ([`@ragsuite/ragsuite`](htt
 | Web | **9191** (Expo) | **9191** (nginx) |
 | Postgres | **5436** | **5436** |
 | Redis | **6382** | **6382** |
-| Chroma | **8004** | internal |
+
+Vectors are stored in PostgreSQL with the **pgvector** extension — there is no separate vector database service or port.
 
 OpenAPI when the API is up: http://localhost:9090/docs
 
 <Warning>
-If another service already binds **9090**, **9191**, **5436**, **6382**, or **8004**, `ragsuite start` and `ragsuite doctor` will fail until you free those ports or change the conflicting service. Do not guess alternate ports unless you also update `.env` consistently.
+If another service already binds **9090**, **9191**, **5436**, or **6382**, `ragsuite start` and `ragsuite doctor` will fail until you free those ports or change the conflicting service. Do not guess alternate ports unless you also update `.env` consistently.
 </Warning>
 
 ## Shared (CLI)
@@ -38,9 +39,11 @@ If another service already binds **9090**, **9191**, **5436**, **6382**, or **80
 |------|------|
 | Python | **3.14** (`python3.14`) |
 | Yarn | **1.22+** (`corepack enable`) |
-| Postgres | **15+** on **:5436**, database `ragsuite_v3` |
+| Postgres | **15+** with the **pgvector** extension on **:5436**, database `ragsuite_v3` |
 | Redis | **7+** on **:6382** |
-| Docker | optional — can start Postgres/Redis only |
+| Docker | optional — can start Postgres (pgvector image) and Redis only |
+
+On host Postgres, install pgvector for your PostgreSQL version (for example `brew install pgvector` or `apt install postgresql-<version>-pgvector`).
 
 ## Docker mode
 
@@ -48,6 +51,8 @@ If another service already binds **9090**, **9191**, **5436**, **6382**, or **80
 |------|------|
 | Docker Desktop / Engine | daemon running |
 | Compose v2 | `docker compose version` |
+
+The Compose Postgres image already includes pgvector.
 
 ## Verify
 

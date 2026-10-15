@@ -105,6 +105,10 @@ This command:
 Do **not** use `docker compose down -v` or `init --force` for normal upgrades — those paths destroy data or reinstall aggressively.
 </Warning>
 
+<Info>
+Upgrading an install from **1.0.7 or earlier**? Those releases stored vectors in ChromaDB. The first start after the update imports them into pgvector automatically — back up first and follow [Upgrading from a Chroma-based release](/GettingStarted/DockerDeploy/Index#upgrading-from-a-chroma-based-release).
+</Info>
+
 ## Ports
 
 | Service | native | docker |
@@ -113,7 +117,8 @@ Do **not** use `docker compose down -v` or `init --force` for normal upgrades �
 | Web | **9191** (Expo) | **9191** (nginx) |
 | Postgres | **5436** | **5436** |
 | Redis | **6382** | **6382** |
-| Chroma | **8004** | internal |
+
+Vectors are stored in Postgres with **pgvector** — no separate vector database port.
 
 ## Email (SMTP)
 

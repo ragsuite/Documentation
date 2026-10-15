@@ -27,7 +27,7 @@ Commercial comparison: [ragsuite.de/pricing](https://www.ragsuite.de/pricing/#co
 - [AI Voice Pilot](/Console/AIVoicePilot/Index) — speak to the knowledge base and hear spoken answers  
 - [MCP](/SourcesAndConnectors/MCP/Index) — Management keys so Cursor, Claude, VS Code, and similar hosts call RAGSuite  
 - **n8n** is **Beta**  
-- [Model Configuration](/Console/ModelConfiguration/Index) with curated LLM providers (**OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**, **Custom LLM / Ollama**)  
+- [Model Configuration](/Console/ModelConfiguration/Index) with LLM providers (**OpenAI**, **Azure OpenAI**, **Anthropic**, **Mistral**, **Google Gemini**, **Custom LLM / Ollama**)  
 - REST API, API keys, webhooks  
 - Citations, feedback, password auth, 2FA & sessions  
 - System health, notifications, basic audit (15 days)  
@@ -42,7 +42,7 @@ Requires a vendor-issued **offline key** and **Enterprise bundle**.
 
 | Area | Notes |
 |------|--------|
-| SSO | Google OIDC single sign-on |
+| SSO | Single sign-on with Google or Microsoft Entra ID (OIDC) |
 | Org RBAC | Teams, orgs, members, and project access control |
 | Compare Models | Side-by-side model scoring on your infrastructure |
 | Query tracing | Deep query tracing for compliance and quality review |

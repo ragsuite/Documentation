@@ -11,7 +11,7 @@ icon: "cpu"
 
 ## Per provider
 
-Open a provider ([OpenAI, Anthropic, Mistral, Google Gemini, or Custom LLM / Ollama](/Models/Providers/Index)) and set:
+Open a provider ([OpenAI, Azure OpenAI, Anthropic, Mistral, Google Gemini, or Custom LLM / Ollama](/Models/Providers/Index)) and set:
 
 | Setting | Notes |
 |---------|-------|
@@ -20,6 +20,8 @@ Open a provider ([OpenAI, Anthropic, Mistral, Google Gemini, or Custom LLM / Oll
 | **API key** | Stored encrypted and verified with the provider when you save. Ollama runs locally and needs no key — use **Test connection** instead |
 | **Chatbot tuning** | Temperature, similarity threshold, and max tokens (500–3000) for every Chatbot widget on this provider |
 | **Search tuning** | Temperature, similarity threshold, and max tokens (400–3000; short answers are capped at 500) for every Search widget on this provider |
+
+**Azure OpenAI** also needs your resource **Endpoint** (required) and an optional **API version**. Instead of picking models, enter your **chat deployment** (required) and **embedding deployment** names, or use **Refresh** to load them from Azure. See [Providers › Azure OpenAI](/Models/Providers/Index#azure-openai).
 
 A temperature of 0.2–0.5 suits most chatbots and search: lower values keep answers focused and close to your content.
 

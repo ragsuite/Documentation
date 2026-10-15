@@ -1,6 +1,6 @@
 ---
 title: "Providers"
-description: "Curated LLM providers in RAGSuite — OpenAI, Anthropic, Mistral, Google Gemini, and Custom LLM / Ollama."
+description: "LLM providers in RAGSuite — OpenAI, Azure OpenAI, Anthropic, Mistral, Google Gemini, and Custom LLM / Ollama."
 sidebarTitle: "Providers"
 icon: "cloud"
 ---
@@ -9,7 +9,7 @@ icon: "cloud"
 
 RAGSuite is **model-agnostic** within the providers below. Configure **your** API keys (or a local Ollama host) and pick chat / embedding models per project in Console › [Model Configuration](/Console/ModelConfiguration/Index). See [Bring your own keys](/Models/BringYourOwnKeys/Index).
 
-The console model picker uses these **curated** catalogs. Live API or Ollama discovery can add more **chat** models when keys or hosts are available.
+The console model picker uses these **curated** catalogs. Live API or Ollama discovery can add more **chat** models when keys or hosts are available. **Azure OpenAI** has no curated list — you use the deployment names from your own Azure resource.
 
 ## OpenAI
 
@@ -17,6 +17,20 @@ The console model picker uses these **curated** catalogs. Live API or Ollama dis
 |------|----------------|
 | Chat | `gpt-4`, `gpt-4-turbo`, `gpt-3.5-turbo`, `gpt-4o`, `gpt-4o-mini`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `gpt-5`, `gpt-5-mini`, `gpt-5-nano`, `gpt-5.1`, `gpt-5.2`, `gpt-5.4`, `gpt-5.4-pro`, `gpt-5.4-mini`, `gpt-5.4-nano`, `o3`, `o4-mini` |
 | Embeddings | `text-embedding-3-large`, `text-embedding-3-small` |
+
+## Azure OpenAI
+
+Use OpenAI models deployed in your own Azure OpenAI resource. Set it up in [Model Configuration](/Console/ModelConfiguration/Index):
+
+| Field | Notes |
+|-------|-------|
+| **Endpoint** | Required — your resource URL, for example `https://YOUR_RESOURCE.openai.azure.com` (no deployment path) |
+| **API key** | Required |
+| **API version** | Optional — leave blank to use the default Azure OpenAI API version |
+| **Chat deployment** | Required — the exact chat deployment name from Azure |
+| **Embedding deployment** | The exact embedding deployment name from Azure |
+
+After the endpoint and API key are set, use **Refresh** to load your chat and embedding deployments, or type the names manually.
 
 ## Anthropic
 

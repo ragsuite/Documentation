@@ -47,7 +47,7 @@ ragsuite start
     Domain, sitemap XML, documents, text, Q&A pairs, MCP, and n8n (Beta). Embed where your team works.
   </Card>
   <Card title="Models" icon="brain" href="/Models/Index">
-    OpenAI, Anthropic, Mistral, Gemini, or local Custom LLM / Ollama.
+    OpenAI, Azure OpenAI, Anthropic, Mistral, Gemini, or local Custom LLM / Ollama.
   </Card>
 </CardGroup>
 

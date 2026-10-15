@@ -17,7 +17,7 @@ Configure JWT and SMTP in `.env` before production use. `JWT_SECRET_KEY` must be
 
 ## Enterprise
 
-**SSO** with **Google OIDC** is an Enterprise module. See [SSO](/Enterprise/SSO/Index).
+**SSO** with **Google** or **Microsoft Entra ID** (OIDC) is an Enterprise module. See [SSO](/Enterprise/SSO/Index).
 
 Organization RBAC (teams, orgs, members, and project access) is also Enterprise — see [Organization & RBAC](/Enterprise/OrganizationAndRBAC/Index).
 
